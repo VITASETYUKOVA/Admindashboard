@@ -1,0 +1,39 @@
+.sorting__control{
+    display: inline-flex;
+    align-items: flex-start;;
+    gap: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    color: --color-purple;
+    background-clip: padding-box;
+    padding: 16px 43px;
+    min-height: 60px;
+    cursor: pointer;
+    background-image: url(/img/arrowDown.svg);
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    appearance: none;
+    max-width: 207px;
+    outline: 0;
+    border-radius: 40px;
+    border: 2px solid var(--color-purple, #4D44B5);
+    box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+
+    @media (max-width: $size-screen-tablet) {
+      font-size: 15px;
+      padding: 10px 25px;
+           
+    }
+        
+    @media (max-width: $size-screen-mobile) {
+     font-size: 13px;
+    }
+    
+  
+    &:active {
+      outline: 0;
+    }
+  }

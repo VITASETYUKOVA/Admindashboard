@@ -1,0 +1,33 @@
+.students__info.students__info--Viewmorebtn {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: --linear-transparent-purple-10;
+    border-radius: 40px;
+    box-shadow: 0px 20px 50px 0px rgba(191, 21, 108, 0.05);
+    padding: 17px 109px;
+    color:--color-purple;
+    
+    @media (max-width: $size-screen-tablet) {
+      font-size: 15px;
+      padding: 17px 70px;
+      text-align: center;
+    }
+  
+    @media (max-width: $size-screen-mobile) {
+      font-size: 13px;
+    }
+  
+    &:hover,
+    &:active {
+      border-radius: 30px;
+      color: --main-color-text-hover;
+  
+      @media (max-width: $size-screen-tablet) {
+        border-radius: 0;
+      }
+    }
+}
