@@ -1,19 +1,17 @@
-.form__submit.btn{
+.view-more-btn {
     display: block;
-    min-height: rem(60);
     text-decoration: none;
     font-size: rem(18);
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
-    padding: rem(10) rem(24);
-    background-color:var(--color-purple);
+    background-color:var(--linear-transparent-purple-10);
     border-radius: 40px;
-    outline: none;
-    text-align: center;
-    color:var(--color-white);
+    box-shadow: rem(0) rem(20) rem(50) rem(0) rgba(191, 21, 108, 0.05);
+    padding: rem(17) rem(109);
+    color:var(--color-purple);
     
-  
+    
     &:hover,
     &:active {
       border-radius: 30px;
