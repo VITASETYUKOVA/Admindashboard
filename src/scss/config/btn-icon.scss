@@ -7,6 +7,12 @@
     border-radius: 40px;
     background: var(--color-Purple);
     box-shadow: rem(0) rem(20) rem(50) rem(0) rgba(191, 21, 108, 0.05);
+
+
+    &:hover,
+    &:active {
+      border-radius: 30px;
+      background-color: var(--main-color-text-hover);
     
     &:disabled {
         color: #b9b9b9;
