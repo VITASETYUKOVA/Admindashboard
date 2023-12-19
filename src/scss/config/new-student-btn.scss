@@ -20,9 +20,14 @@
     border: 2px solid var(--color-purple);
     box-shadow: rem(0) rem(20) rem(50) rem(0) rgba(191, 21, 108, 0.05);
 
-    
-  
     &:active {
       outline: 0;
+    }
+
+    &:disabled {
+      color: #b9b9b9;
+      background-color: #e7e7e7;
+      outline: 4px solid rgba(252, 252, 252, 0.4);
+      cursor: default;
     }
   }
