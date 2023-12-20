@@ -1,0 +1,32 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: rem(16);
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: rem(18);
+  line-height: 1.56;
+  background: var(--color-purple);
+  padding: rem(16) rem(24);
+  cursor: pointer;
+  max-width: 100%;
+  border-radius: 2.222em;
+  border: 0;
+  box-shadow: 0 rem(20) rem(50) 0 rgba(191, 21, 108, 0.05);
+  transition: all 0.3s;
+
+  &:hover {
+    // background
+  }
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+
+  &:disabled {
+    color: #b9b9b9;
+    background-color: #e7e7e7;
+    cursor: default;
+  }
+}
