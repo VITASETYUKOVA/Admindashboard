@@ -2,14 +2,11 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 0;
   border: 0;
   width: rem(48);
   height: rem(48);
-  display: block;
   border-radius: 50%;
-  line-height: 0;
   background: var(--color-purple);
   box-shadow: 0 rem(20) rem(50) 0 rgba(191, 21, 108, 0.05);
   cursor: pointer;
@@ -22,8 +19,6 @@
   }
 
   &:disabled {
-    color: var(--color-disabled);
-    background-color: var(--bg-disabled);
-    cursor: default;
+    @include disabled;
   }
 }

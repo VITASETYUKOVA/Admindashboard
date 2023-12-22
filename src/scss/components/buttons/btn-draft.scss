@@ -1,14 +1,11 @@
 .btn-outline {
-  display: block;
+  display: inline-flex;
   text-decoration: none;
-  font-size: rem(18);
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  padding: rem(10) rem(24);
+  line-height: 1.56;
+  padding: rem(14) rem(24);
   cursor: pointer;
   border-radius: 2.222em;
-  border: 2px solid var(--color-purple);
+  border: 2px solid currentColor;
   text-align: center;
   color: var(--color-purple);
 
@@ -18,9 +15,6 @@
   }
 
   &:disabled {
-    color: var(--color-disabled);
-    background-color: var(--bg-disabled);
-    cursor: default;
-    border: var(--color-disabled);
+    @include disabled;
   }
 }
