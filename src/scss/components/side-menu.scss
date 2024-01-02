@@ -1,0 +1,30 @@
+.side-menu {
+    margin-bottom: rem(80);
+  }
+  
+  .side-menu__item {
+    margin-bottom: rem(8);
+  }
+  
+  .side-menu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .side-menu__link {
+    display: flex;
+    align-items: center;
+    gap: rem(24);
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-grey-2);
+    padding: rem(16) rem(24);
+    border-radius: 2.222em 0 0 2.222em;
+  
+    &--active {
+      background-color: var(--color-white);
+      color: var(--color-purple);
+      box-shadow: 0 rem(20) rem(50) 0 var(--bsh-color);
+    }
+  }

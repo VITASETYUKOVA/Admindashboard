@@ -3,7 +3,7 @@
 /**
 * Подключение шрифтов локально из папки "./src/fonts"
 */
-@import 'config/fonts';
+
 
 /** Подключение переменных */
 @import 'config/variables';
@@ -33,9 +33,10 @@
 * Подключение стилей отдельных блоков и секций
 */
 @import 'components/header';
-@import 'components/buttons/btn-icon';
-@import 'components/buttons/btn-draft';
-@import 'components/buttons/btn';
-@import 'components/buttons/btn-newest';
-@import 'components/buttons/btn-view-more';
+@import 'components/buttons/check';
+@import 'components/side-menu';
+@import 'components/side-bar';
+@import 'components/footer';
+@import 'components/logo';
+
 

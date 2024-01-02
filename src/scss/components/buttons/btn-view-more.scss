@@ -1,17 +1,16 @@
 .btn-view-more {
   display: block;
   text-decoration: none;
-  font-size: rem(18);
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
+  line-height: 1.56;
   background-color: var(--linear-transparent-purple-10);
   border-radius: 2.222em;
   cursor: pointer;
-  box-shadow: 0 rem(20) rem(50) 0 rgba(191, 21, 108, 0.05);
+  box-shadow: 0 rem(20) rem(50) 0 var(--bsh-color);
   padding: rem(17) rem(109);
   color: var(--color-purple);
   border: 0;
+  width: 100%;
 
   &:hover,
   &:active {
@@ -19,8 +18,6 @@
   }
 
   &:disabled {
-    color: var(--color-disabled);
-    background-color: var(--bg-disabled);
-    cursor: default;
+    @include disabled;
   }
 }

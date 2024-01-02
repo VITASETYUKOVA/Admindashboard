@@ -1,1 +1,5 @@
-
+@mixin disabled{
+    color: var(--color-disabled);
+    background-color: var(--bg-disabled);
+    cursor: default;
+}

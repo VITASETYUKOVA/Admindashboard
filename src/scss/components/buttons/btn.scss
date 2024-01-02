@@ -7,13 +7,17 @@
   font-size: rem(18);
   line-height: 1.56;
   background: var(--color-purple);
-  padding: rem(16) rem(29.5);
+  padding: rem(16) rem(24);
   cursor: pointer;
   max-width: 100%;
   border-radius: 2.222em;
   border: 0;
-  box-shadow: 0 rem(20) rem(50) 0 rgba(191, 21, 108, 0.05);
+  box-shadow: 0 rem(20) rem(50) 0 var(--bsh-color);
   transition: all 0.3s;
+
+  &--wide {
+    padding: rem(16) rem(24);
+  }
 
   &:hover {
     background-color: var(--color-purple-hover);
@@ -25,8 +29,6 @@
   }
 
   &:disabled {
-    color: var(--color-disabled);
-    background-color: var(--bg-disabled);
-    cursor: default;
+    @include disabled;
   }
 }
