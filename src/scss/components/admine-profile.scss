@@ -1,0 +1,33 @@
+.admine-profile {
+  display: flex;
+  gap: rem(24);
+}
+
+.admine-profile__container {
+  display: flex;
+  flex-direction: column;
+  gap: rem(4);
+  margin-top: rem(7);
+}
+
+.admine-profile__text {
+  font-size: rem(14);
+  line-height: 1.5;
+  text-align: right;
+  margin: 0;
+  color: var(--color-grey-3);
+
+  &--name {
+    font-weight: 600;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+}
+
+.admine-avatar {
+  width: rem(60);
+  height: rem(60);
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--color-grey-2);
+}
