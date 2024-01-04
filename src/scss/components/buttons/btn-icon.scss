@@ -4,23 +4,20 @@
   align-items: center;
   text-align: center;
   padding: 0;
-  border: 0;
   width: rem(48);
   height: rem(48);
   border-radius: 50%;
   line-height: 0;
-  background: var(--color-purple);
   box-shadow: 0 rem(20) rem(50) 0 var(--bsh-color);
   cursor: pointer;
-  color: var(--color-white);
-  transition: background 0.3s;
+  background-color: transparent;
+  color: var(--color-grey-3);
+  border: rem(2) solid currentColor;
 
   &:hover,
   &:active {
-    background-color: var(--color-purple-hover);
-  }
-
-  &:disabled {
-    @include disabled;
+    background-color: var(--color-purple);
+    border-color: var(--color-purple-hover);
+    color: var(--color-white);
   }
 }
