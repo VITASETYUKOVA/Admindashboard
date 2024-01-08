@@ -1,9 +1,7 @@
 body {
-  min-height: 100%;  
-  font-size: rem(18);
-  background-color: --site-background;
-  font-family:  400 rem(18) 1.5 var(--main-font);
- 
+  min-height: 100%;
+  background-color: var(--site-background);
+  font: 400 rem(18)/1.5 var(--main-font);
 }
 
 html {

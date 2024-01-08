@@ -1,0 +1,25 @@
+.data__recent-students {
+  display: grid;
+  grid-template-areas: 'data__text  btn__icon';
+  grid-template-columns: 1fr auto;
+  margin-bottom: rem(35);
+}
+
+.data__title {
+  color: var(--color-text);
+  font: 700 rem(24) / 1.5;
+  margin-bottom: 4px;
+}
+
+.data__text {
+  order: 0;
+  color: var(--color-grey-3);
+  font-size: rem(14);
+  margin: 0;
+}
+
+.btn__icon {
+  grid-row-start: 0;
+  grid-column-end: -1/-2;
+  justify-self: end;
+}

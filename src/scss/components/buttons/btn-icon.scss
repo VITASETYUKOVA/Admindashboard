@@ -1,0 +1,22 @@
+.btn-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: rem(48);
+  height: rem(48);
+  border-radius: 50%;
+  line-height: 0;
+  box-shadow: 0 rem(20) rem(50) 0 var(--bsh-color);
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--color-grey-3);
+  border: rem(2) solid currentColor;
+
+  &:hover,
+  &:active {
+    background-color: var(--color-purple);
+    border-color: var(--color-purple-hover);
+    color: var(--color-white);
+  }
+}

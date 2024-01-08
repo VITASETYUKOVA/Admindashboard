@@ -1,0 +1,23 @@
+.logo {
+  margin-bottom: 46px;
+}
+
+.logo__link {
+  font-weight: 700;
+  font-size: rem(36);
+  line-height: 1.5;
+  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  gap: rem(16);
+}
+
+.logo__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-orange);
+  width: rem(48);
+  height: rem(48);
+  border-radius: 0.444em;
+}

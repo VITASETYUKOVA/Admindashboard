@@ -1,0 +1,28 @@
+.btn-newest {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  gap: rem(16);
+  text-decoration: none;
+  line-height: 1.56;
+  color: var(--color-purple);
+  padding: rem(13) rem(45);
+  cursor: pointer;
+  max-width: 100%;
+  border-radius: 2.222em;
+  border: 2px solid currentColor;
+  box-shadow: 0 rem(20) rem(50) 0 var(--bsh-color);
+  transition: all 0.3s;
+
+  &:hover {
+    color: var(--main-color-text-hover);
+  }
+
+  &:active {
+    outline: 0;
+  }
+
+  &:disabled {
+    @include disabled;
+  }
+}

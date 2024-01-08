@@ -3,7 +3,7 @@
 /**
 * Подключение шрифтов локально из папки "./src/fonts"
 */
-@import 'config/fonts';
+
 
 /** Подключение переменных */
 @import 'config/variables';
@@ -33,4 +33,11 @@
 * Подключение стилей отдельных блоков и секций
 */
 @import 'components/header';
-
+@import 'components/buttons/check';
+@import 'components/side-menu';
+@import 'components/side-bar';
+@import 'components/footer';
+@import 'components/logo';
+@import 'components/admine-profile';
+@import 'components/right menu navigation';
+@import 'components/student contacts';
