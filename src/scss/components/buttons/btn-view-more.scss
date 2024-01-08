@@ -1,13 +1,14 @@
 .btn-view-more {
   display: block;
   text-decoration: none;
+  text-align: center;
   font-weight: 600;
   line-height: 1.56;
   background-color: var(--linear-transparent-purple-10);
   border-radius: 2.222em;
   cursor: pointer;
-  box-shadow: 0 rem(20) rem(50) 0 var(--bsh-color);
-  padding: rem(17) rem(109);
+  box-shadow: var(--bsh);
+  padding: rem(17) rem(30);
   color: var(--color-purple);
   border: 0;
   width: 100%;

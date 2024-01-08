@@ -29,7 +29,7 @@
   grid-row-start: 1;
 }
 
-.data-list__photo {
+.data__photo {
   border-radius: 50%;
   overflow: hidden;
   background-color: var(--color-grey-2);
@@ -51,4 +51,19 @@
   font-size: rem(14);
   margin: 0;
   color: var(--color-grey-3);
+}
+
+.data-list__photo {
+  display: block;
+
+  &:hover img {
+    opacity: 0;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    transition: opacity 0.3s ease;
+  }
 }

@@ -11,7 +11,7 @@
   max-width: 100%;
   border-radius: 2.222em;
   border: 2px solid currentColor;
-  box-shadow: 0 rem(20) rem(50) 0 var(--bsh-color);
+  box-shadow: var(--bsh);
   transition: all 0.3s;
 
   &:hover {
