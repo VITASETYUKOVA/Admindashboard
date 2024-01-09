@@ -25,6 +25,6 @@
   &--active {
     background-color: var(--color-white);
     color: var(--color-purple);
-    box-shadow: 0 rem(20) rem(50) 0 var(--bsh-color);
+    box-shadow: var(--bsh);
   }
 }
