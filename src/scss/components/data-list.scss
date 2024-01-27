@@ -10,51 +10,59 @@
 
 .data-list__main {
   display: flex;
-  gap: 16px;
+  gap: rem(16);
 }
 
 .data-list {
   margin: 0;
   padding: 0;
   margin-bottom: rem(32);
+
+  &--:hover img {
+    opacity: 0;
+  }
 }
 
 .data-list__inner {
   display: flex;
   flex-direction: column;
   align-self: start;
+  gap: rem(4);
+  min-width: 0;
 }
 
 .btn__icon {
   grid-row-start: 1;
 }
 
-.data__photo {
+.data-list__photo {
   border-radius: 50%;
   overflow: hidden;
   background-color: var(--color-grey-2);
-
-  &--sm {
-    width: rem(48);
-    height: rem(48);
-  }
 }
 
 .data-list__name {
+  text-decoration: none;
   font-weight: 600;
   font-size: rem(14);
   margin: 0;
   color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.data-list__class {
+.data-list__text {
   font-size: rem(14);
   margin: 0;
   color: var(--color-grey-3);
 }
 
-.data-list__photo {
+.data-list__photo--sm {
   display: block;
+  flex-shrink: 0;
+  width: rem(48);
+  height: rem(48);
 
   &:hover img {
     opacity: 0;

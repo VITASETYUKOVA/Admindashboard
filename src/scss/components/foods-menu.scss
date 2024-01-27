@@ -1,0 +1,33 @@
+.foods-menu__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: rem(32);
+
+  .foods-menu__item {
+    &:not(:last-child) {
+      margin-bottom: rem(32);
+    }
+  }
+}
+
+.foods-menu {
+  .title {
+    margin: 0 0 rem(29) 0;
+  }
+}
+
+.foods-menu__heading {
+  font: 600 rem(18) / 1.5 var(--main-font);
+  margin-bottom: rem(4);
+  text-decoration: none;
+  color: var(--color-text);
+  display: block;
+}
+
+.foods-menu__text {
+  margin: 0;
+  font-size: rem(14);
+  line-height: 1.5;
+  color: var(--color-grey-3);
+}
