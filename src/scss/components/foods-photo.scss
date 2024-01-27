@@ -1,0 +1,27 @@
+.foods-photo {
+  display: block;
+  margin-bottom: rem(24);
+  border-radius: rem(18);
+  overflow: hidden;
+  background-color: var(--color-grey-2);
+  width: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.foods-photo {
+  &--sm {
+    aspect-ratio: 1/1;
+  }
+
+  &--md {
+    aspect-ratio: 1.95/1;
+  }
+
+  &--lg {
+    aspect-ratio: 1.5/1;
+  }
+}

@@ -1,0 +1,7 @@
+.foods-menu__text--trimmed,
+.data-list__name,
+.data-list__text--trimmed {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

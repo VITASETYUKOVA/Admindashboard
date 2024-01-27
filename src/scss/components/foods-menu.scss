@@ -1,7 +1,8 @@
 .foods-menu__list {
   list-style-type: none;
   margin: 0;
-  padding: 0 0 rem(32) 0;
+  padding: 0;
+  margin-bottom: rem(32);
 
   .foods-menu__item {
     &:not(:last-child) {
@@ -16,26 +17,12 @@
   }
 }
 
-.foods-photo {
-  display: block;
-  margin-bottom: rem(24);
-  border-radius: rem(18);
-  overflow: hidden;
-  background-color: var(--color-grey-2);
-  width: 100%;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
 .foods-menu__heading {
   font: 600 rem(18) / 1.5 var(--main-font);
   margin-bottom: rem(4);
   text-decoration: none;
   color: var(--color-text);
+  display: block;
 }
 
 .foods-menu__text {
@@ -43,21 +30,4 @@
   font-size: rem(14);
   line-height: 1.5;
   color: var(--color-grey-3);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.foods-photo {
-  &--sm {
-    aspect-ratio: 1/1;
-  }
-
-  &--md {
-    aspect-ratio: 1.95/1;
-  }
-
-  &--lg {
-    aspect-ratio: 1.5/1;
-  }
 }

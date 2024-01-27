@@ -21,8 +21,6 @@
   &--:hover img {
     opacity: 0;
   }
-
-
 }
 
 .data-list__inner {
@@ -41,10 +39,7 @@
   border-radius: 50%;
   overflow: hidden;
   background-color: var(--color-grey-2);
-
-  }
-
-
+}
 
 .data-list__name {
   text-decoration: none;
@@ -61,9 +56,6 @@
   font-size: rem(14);
   margin: 0;
   color: var(--color-grey-3);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .data-list__photo--sm {
