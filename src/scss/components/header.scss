@@ -1,0 +1,16 @@
+.header {
+  grid-area: header;
+}
+
+.header__wrapper {
+  display: flex;
+   align-items: center;
+}
+
+.header__title {
+  text-decoration: none;
+  font: 700 rem(36) / 1.5 var(--main-font);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}

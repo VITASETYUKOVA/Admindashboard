@@ -23,6 +23,8 @@
 */
 @import 'config/base';
 @import 'config/animations';
+@import 'config/visually-hidden';
+
 
 /**
 * БЕМ блоки используемые во всё проекте
@@ -32,7 +34,7 @@
 /**
 * Подключение стилей отдельных блоков и секций
 */
-@import 'components/header';
+
 @import 'components/buttons/check';
 @import 'components/side-menu';
 @import 'components/side-bar';
@@ -46,3 +48,15 @@
 @import 'components/foods-photo.scss';
 @import 'components/text--trimmed.scss';
 @import 'components/title.scss';
+@import 'components/header-page.scss';
+@import 'components/statistic.scss';
+@import 'components/school-perfomance.scss';
+@import 'components/calendar.scss';
+@import 'components/school-finance.scss';
+@import 'components/user-icon.scss';
+@import 'components/unpaid-student.scss';
+@import 'components/purchase.scss';
+@import 'components/pagination.scss';
+@import 'components/main-content.scss';
+@import 'components/right-menu.scss';
+@import 'components/page.scss';
