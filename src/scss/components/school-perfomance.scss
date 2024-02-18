@@ -1,0 +1,24 @@
+.school-perfomance {
+  border-radius: rem(20);
+  background-color: var(--color-white);
+  padding: rem(32) rem(35) rem(32) rem(32);
+  grid-area: perfomance;
+}
+
+.school-perfomance__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: rem(24);
+}
+
+
+.school-perfomance__chart {
+  
+  
+  img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}

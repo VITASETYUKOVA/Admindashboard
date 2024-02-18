@@ -1,0 +1,16 @@
+.main-content {
+  height: 100%;
+  overflow-y: auto;
+  padding: rem(50);
+  display: grid;
+  grid-template-areas:  "header header"
+                        "statistic statistic"
+                        "perfomance perfomance"
+                        "calendar finance"
+                        "unpaid unpaid";
+  grid-template-columns: 1fr 1fr;
+  gap: rem(40);
+  flex-grow: 1;
+  background-color: rgba(243, 244, 255, 1);
+}
+

@@ -1,0 +1,13 @@
+.school-finance {
+  border-radius: rem(20);
+  background-color: var(--color-white);
+  padding: rem(32);
+  grid-area: finance;
+}
+
+.school-finance__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: rem(24);
+}

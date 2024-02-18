@@ -5,8 +5,13 @@
   margin-bottom: rem(35);
 }
 
+.student-communication__data {
+  &.data {
+    margin-bottom: rem(64);
+  }
+}
 .student-communication__info {
-    margin-top: rem(4);
+  margin-top: rem(4);
 }
 
 .student-communication__text {

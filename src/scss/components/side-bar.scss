@@ -2,4 +2,7 @@
   background-color: var(--color-purple);
   padding: rem(50) 0 rem(50) rem(46);
   width: rem(345);
+  height: 100%;
+  overflow: auto;
+  flex-shrink: 0;
 }

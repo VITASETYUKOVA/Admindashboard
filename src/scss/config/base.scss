@@ -2,6 +2,11 @@ body {
   min-height: 100%;
   background-color: var(--site-background);
   font: 400 rem(18)/1.5 var(--main-font);
+  color: var(--color-text);
+  margin: 0 auto;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
 }
 
 html {
@@ -16,3 +21,35 @@ html {
   box-sizing: inherit;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  min-height: 100%;
+  font: 400 rem(18)/1.5 var(--main-font);
+  color: var(--text);
+  background-color: var(--main-background-color);
+}  
+
+.wrapper {
+  max-width: 1920px;
+  // padding-right: 15px;
+  // padding-left: 15px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
