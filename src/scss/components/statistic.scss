@@ -9,12 +9,15 @@
 .statistic__list {
   display: grid;
   grid-template-columns: repeat(4, 25%);
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .statistic__link {
-  line-height: 0;
+  
   display: inline-flex;
-  justify-content: center;
+ 
   align-items: center;
   text-decoration: none;
   color: var(--color-white);
@@ -41,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: 30px;
+  margin-left: rem(30);
 }
 
 .statistic__numbers {

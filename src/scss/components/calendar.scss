@@ -1,6 +1,7 @@
 .school-calendar__greed {
   width: 100%;
   border-collapse: collapse;
+  table-layout: fixed;
 }
 
 .school-calendar__week {
@@ -11,54 +12,39 @@
 }
 
 .school-calendar__day {
-  padding: rem(10);
+  padding:0 rem(10) 0;
 }
 
 .school-calendar__note {
-  &--shapeYellow::before {
-    position: absolute;
-    content: '';
-    width: rem(48);
-    height: rem(48);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -2;
+  &--shape-yellow,
+  &--shape-orange,
+  &--shape-purple {
+    &::before {
+      position: absolute;
+      content: '';
+      width: rem(48);
+      height: rem(48);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+    }
+  }
+  &--shape-yellow::before {
     background-color: var(--color-yellow);
   }
-  &--shapeOrange::before {
-    background-color: var(--color-orange);
-    position: absolute;
-    content: '';
-    width: rem(48);
-    height: rem(48);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -2;
-  }
-
-  &--shapePurple::before {
+  &--shape-purple::before {
     background-color: var(--color-purple);
-    position: absolute;
-    content: '';
-
-    width: rem(48);
-    height: rem(48);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -2;
+  }
+  &--shape-orange::before {
+    background-color: var(--color-orange);
   }
 }
-
 .school-calendar__note {
-  &.school-calendar__note--shapeOrange,
-  &.school-calendar__note.school-calendar__note--shapeYellow,
-  &.school-calendar__note.school-calendar__note--shapePurple {
+  &.school-calendar__note--shape-orange,
+  &.school-calendar__note.school-calendar__note--shape-yellow,
+  &.school-calendar__note.school-calendar__note--shape-purple {
     color: var(--color-white);
   }
 }
@@ -80,6 +66,7 @@
 
 .school-calendar__note,
 .school-calendar__number {
+  padding: 0;
   width: rem(65);
   height: rem(74);
   position: relative;

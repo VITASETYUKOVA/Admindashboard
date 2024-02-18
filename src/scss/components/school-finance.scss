@@ -1,56 +1,13 @@
 .school-finance {
-  border-radius: 1.111em;
+  border-radius: rem(20);
   background-color: var(--color-white);
   padding: rem(32);
   grid-area: finance;
 }
 
 .school-finance__inner {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-}
-.school-finance__list {
-  margin: 0;
-  display: inline-flex;
-  gap: rem(16);
-}
-
-.school-finance__item {
-  padding-right: rem(8);
-
-  &--yellowmarker {
-    color: var(--color-yellow);
-    outline-width: 3px solid currentColor;
-  }
-  &--orangemarker {
-    color: var(--color-orange);
-  }
-
-  span {
-    color: var(--color-grey-3);
-    border: 0;
-  }
-  &:not(:last-child) {
-    margin-right: rem(16);
-  }
-
-  p {
-    color: var(--color-text);
-    margin: 0;
-    padding: 0;
-    font: 700 rem(18) / 1.5 var(--main-font);
-  }
-}
-
-.school-finance__title {
-  text-decoration: none;
-  font: 700 rem(24) / 1.5 var(--main-font);
-  color: var(--color-text);
-  margin: 0;
-}
-
-.school-finance__chart {
-  display: block;
-  margin-top: rem(24);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: rem(24);
 }

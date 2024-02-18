@@ -1,62 +1,24 @@
 .school-perfomance {
-  border-radius: 1.111em;
+  border-radius: rem(20);
   background-color: var(--color-white);
   padding: rem(32) rem(35) rem(32) rem(32);
   grid-area: perfomance;
 }
 
 .school-perfomance__inner {
-  display: inline-flex;
-  align-items: center;
-  position: relative;
-  width: 100%;
-}
-.school-perfomance__list {
-  margin-left: auto;
-  display: inline-flex;
-  gap: rem(16);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: rem(24);
 }
 
-.school-perfomance__item {
-  padding-right: rem(8);
-
-  &--yellowmarker {
-    color: var(--color-yellow);
-    outline-width: 3px solid currentColor;
-  }
-  &--orangemarker {
-    color: var(--color-orange);
-  }
-
-  span {
-    color: var(--color-grey-3);
-    border: 0;
-  }
-  &:not(:last-child) {
-    margin-right: rem(16);
-  }
-
-  p {
-    color: var(--color-text);
-    margin: 0;
-    padding: 0;
-    font: 700 rem(18) / 1.5 var(--main-font);
-  }
-}
-
-.school-perfomance__title {
-  text-decoration: none;
-  font: 700 rem(24) / 1.5 var(--main-font);
-  color: var(--color-text);
-  margin: 0;
-  padding: 0;
-}
 
 .school-perfomance__chart {
-  display: block;
-  margin-top: rem(24);
+  
+  
   img {
     width: 100%;
     object-fit: cover;
+    display: block;
   }
 }

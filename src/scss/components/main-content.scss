@@ -1,6 +1,6 @@
 .main-content {
   height: 100%;
-  overflow: auto;
+  overflow-y: auto;
   padding: rem(50);
   display: grid;
   grid-template-areas:  "header header"
@@ -9,8 +9,7 @@
                         "calendar finance"
                         "unpaid unpaid";
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: rem(40);
-  grid-row-gap: rem(40);
+  gap: rem(40);
   flex-grow: 1;
   background-color: rgba(243, 244, 255, 1);
 }
