@@ -16,14 +16,11 @@
     font-size: rem(36);
   }
 }
-.header__wrapper {
-  display: flex;
-  margin-bottom: rem(40);
-}
 
 .students-menu__title {
   text-decoration: none;
   font: 700 rem(36) / 1.5 var(--main-font);
   color: var(--color-text);
   padding: 0;
+  margin: 0;
 }

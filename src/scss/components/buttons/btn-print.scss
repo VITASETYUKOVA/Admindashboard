@@ -1,6 +1,6 @@
 .btn-print,
 .btn-dots{
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: rem(46);
@@ -15,9 +15,10 @@
   vertical-align: middle;
 
   &--left {
-   margin-left: auto;
-   width: 5.65%;
-  }
+   margin-left: 70px;
+    
+   }
+ 
 
 
   &:hover {

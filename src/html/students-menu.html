@@ -1,7 +1,7 @@
 <section class="students-menu">
   <div class="students-menu__inner">
     <h2 class="students-menu__title">Students</h2>
-    <nav class="settings">
+    <nav class="students-menu__navigation students-menu__navigation--settings">
       <ul class="settings__list">
         <li class="settings__item">
           <a
@@ -44,25 +44,25 @@
       </ul>
     </nav>
   </div>
-  <div class="header__wrapper">
+  <div class="students-menu__search">
     <form
       action="/search"
       method="get"
-      class="header__inner header__inner--menu"
+      class="students-menu__info students-menu__info--menu"
     >
-      <label for="search">
-        <svg width="32" height="32">
-          <use xlink:href="#search-icon"></use>
-        </svg>
-      </label>
       <input
-        class="header__field"
+        class="students-menu__field"
         type="text"
         id="navsite"
         name="search"
         placeholder="Search here..."
         required
       />
+      <label for="search">
+        <svg width="32" height="32">
+          <use xlink:href="#search-icon"></use>
+        </svg>
+      </label>
     </form>
     <button class="btn-newest btn-newest--wide btn-newest--right" type="button">
       Newest
@@ -74,12 +74,214 @@
   </div>
   <div class="students-reference">
     <ul class="students-reference__list">
-      <ul
-        class="students-reference__sublist students-reference__sublist--title"
-      >
-        <li
-          class="students-reference__item students-reference__item--weight students-reference__item--form"
+      <li class="students-reference__sublist sublist">
+        <div class="sublist__item sublist__item--weight sublist__item--form">
+          <label class="sublist__checkbox">
+            <input
+              class="visually-hidden sublist__checkbox--input"
+              type="checkbox"
+              name="subscribe"
+              value=""
+            />
+            <span class="sublist__checkmark"></span>
+          </label>
+        </div>
+        <div class="sublist__item sublist__item--weight sublist__item--name">
+          Name
+        </div>
+        <div class="sublist__item sublist__item--weight sublist__item--id">
+          ID
+        </div>
+        <div class="sublist__item sublist__item--weight sublist__item--date">
+          Date
+        </div>
+        <div
+          class="sublist__item sublist__item--weight sublist__item--parent-name"
         >
+          Parent Name
+        </div>
+        <div class="sublist__item sublist__item--weight sublist__item--city">
+          City
+        </div>
+        <div class="sublist__item sublist__item--weight sublist__item--contact">
+          Contact
+        </div>
+        <div class="sublist__item sublist__item--weight sublist__item--grade">
+          Grade
+        </div>
+        <div class="sublist__item sublist__item--weight sublist__item--action">
+          Action
+        </div>
+      </li>
+      <li class="students-reference__item students-reference__item--check">
+        <div class="students-reference__box">
+          <label class="students-reference__checkbox">
+            <input
+              class="visually-hidden students-reference__checkbox--input"
+              type="checkbox"
+              name="subscribe"
+              value=""
+              checked
+            />
+            <span class="students-reference__checkmark"></span>
+          </label>
+        </div>
+        <div class="students-reference__data-list data-list">
+          <a class="data-list__photo data-list__photo--sm"
+            ><img
+              src="https://img.freepik.com/free-photo/carefree-girl-with-brown-makeup-drinking-tea-at-balcony-photo-of-pleasant-brunette-woman-in-knitted-dress-enjoying-coffee_197531-11385.jpg?w=1060&t=st=1704573936~exp=1704574536~hmac=5137e5022f476c198e5637b21f818cdc7498cc85081852563ebaaab1a9309e4c"
+          /></a>
+          <a class="user-data__text text--trimmed user-data__text--size"
+            >Samantha William</a
+          >
+        </div>
+        <div
+          class="students-reference__inform students-reference__inform--color"
+        >
+          ID 123456789
+        </div>
+        <div class="students-reference__date">March 25, 2021</div>
+        <div class="students-reference__parents">Mana William</div>
+        <div class="students-reference__city">Jakarta</div>
+        <div class="students-reference__contact">
+          <button class="btn-icon btn-icon--sm" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button class="btn-icon btn-icon--sm" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="students-reference__class students-reference__class--background-orange"
+        >
+          VII A
+        </div>
+
+        <div class="students-reference__btn">
+          <button class="btn-dots btn-dots--left" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="students-reference__item">
+        <div class="students-reference__box">
+          <input
+            class="visually-hidden students-reference__checkbox--input"
+            type="checkbox"
+            name="subscribe"
+            value=""
+          />
+          <label class="students-reference__checkbox">
+            <span class="students-reference__checkmark"></span>
+          </label>
+        </div>
+        <div class="students-reference__data-list data-list">
+          <a class="data-list__photo data-list__photo--sm"
+            ><img
+              src="https://img.freepik.com/free-photo/carefree-girl-with-brown-makeup-drinking-tea-at-balcony-photo-of-pleasant-brunette-woman-in-knitted-dress-enjoying-coffee_197531-11385.jpg?w=1060&t=st=1704573936~exp=1704574536~hmac=5137e5022f476c198e5637b21f818cdc7498cc85081852563ebaaab1a9309e4c"
+          /></a>
+          <a class="user-data__text text--trimmed user-data__text--size"
+            >Tony Soap</a
+          >
+        </div>
+        <div
+          class="students-reference__inform students-reference__inform--color"
+        >
+          ID 123456789
+        </div>
+        <div class="students-reference__date">March 25, 2021</div>
+        <div class="students-reference__parents">James Soap</div>
+        <div class="students-reference__city">Jakarta</div>
+        <div class="students-reference__contact">
+          <button class="btn-icon btn-icon--sm" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button class="btn-icon btn-icon--sm" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div
+          class="students-reference__class students-reference__class--background-yellow"
+        >
+          VII A
+        </div>
+
+        <div class="students-reference__btn">
+          <button class="btn-dots btn-dots--left">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="students-reference__item students-reference__item--check">
+        <div class="students-reference__box">
+          <label class="students-reference__checkbox">
+            <input
+              class="visually-hidden students-reference__checkbox--input"
+              type="checkbox"
+              name="subscribe"
+              value=""
+              checked
+            />
+            <span class="students-reference__checkmark"></span>
+          </label>
+        </div>
+        <div class="students-reference__data-list data-list">
+          <a class="data-list__photo data-list__photo--sm"
+            ><img
+              src="https://img.freepik.com/free-photo/carefree-girl-with-brown-makeup-drinking-tea-at-balcony-photo-of-pleasant-brunette-woman-in-knitted-dress-enjoying-coffee_197531-11385.jpg?w=1060&t=st=1704573936~exp=1704574536~hmac=5137e5022f476c198e5637b21f818cdc7498cc85081852563ebaaab1a9309e4c"
+          /></a>
+          <a class="user-data__text text--trimmed user-data__text--size"
+            >Karen Hope</a
+          >
+        </div>
+        <div
+          class="students-reference__inform students-reference__inform--color"
+        >
+          ID 123456789
+        </div>
+        <div class="students-reference__date">March 25, 2021</div>
+        <div class="students-reference__parents">Justin Hope</div>
+        <div class="students-reference__city">Jakarta</div>
+        <div class="students-reference__contact">
+          <button class="btn-icon btn-icon--sm" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button class="btn-icon btn-icon--sm" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div
+          class="students-reference__class students-reference__class--background-purple"
+        >
+          VII A
+        </div>
+        <div class="students-reference__btn">
+          <button class="btn-dots btn-dots--left" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="students-reference__item">
+        <div class="students-reference__box">
           <label class="students-reference__checkbox">
             <input
               class="visually-hidden students-reference__checkbox--input"
@@ -89,205 +291,8 @@
             />
             <span class="students-reference__checkmark"></span>
           </label>
-        </li>
-        <li
-          class="students-reference__item students-reference__item--weight students-reference__item--name"
-        >
-          Name
-        </li>
-        <li
-          class="students-reference__item students-reference__item--weight students-reference__item--id"
-        >
-          ID
-        </li>
-        <li
-          class="students-reference__item students-reference__item--weight students-reference__item--date"
-        >
-          Date
-        </li>
-        <li
-          class="students-reference__item students-reference__item--weight students-reference__item--parent-name"
-        >
-          Parent Name
-        </li>
-        <li
-          class="students-reference__item students-reference__item--weight students-reference__item--city"
-        >
-          City
-        </li>
-        <li
-          class="students-reference__item students-reference__item--weight students-reference__item--contact"
-        >
-          Contact
-        </li>
-        <li
-          class="students-reference__item students-reference__item--weight students-reference__item--grade"
-        >
-          Grade
-        </li>
-        <li
-          class="students-reference__item students-reference__item--weight students-reference__item--action"
-        >
-          Action
-        </li>
-      </ul>
-      <li class="students-reference__item students-reference__item--check">
-        <label class="students-reference__checkbox">
-          <input
-            class="visually-hidden students-reference__checkbox--input"
-            type="checkbox"
-            name="subscribe"
-            value=""
-            checked
-          />
-          <span class="students-reference__checkmark"></span>
-        </label>
-        <div class="notes__main data-list data-list--name">
-          <a class="data-list__photo data-list__photo--sm"
-            ><img
-              src="https://img.freepik.com/free-photo/carefree-girl-with-brown-makeup-drinking-tea-at-balcony-photo-of-pleasant-brunette-woman-in-knitted-dress-enjoying-coffee_197531-11385.jpg?w=1060&t=st=1704573936~exp=1704574536~hmac=5137e5022f476c198e5637b21f818cdc7498cc85081852563ebaaab1a9309e4c"
-          /></a>
-          <a class="user-data__text text--trimmed user-data__text--size"
-            >Samantha William</a
-          >
         </div>
-        <span
-          class="students-reference__inform students-reference__inform--color"
-          >ID 123456789</span
-        >
-        <span class="students-reference__date">March 25, 2021</span>
-        <span class="students-reference__parents">Mana William</span>
-        <span class="students-reference__city">Jakarta</span>
-        <div class="students-reference__btn">
-          <button class="btn-icon btn-icon--sm" type="button">
-            <svg width="24" height="24">
-              <use xlink:href="#call-icon"></use>
-            </svg>
-          </button>
-          <button class="btn-icon btn-icon--sm" type="button">
-            <svg width="24" height="24">
-              <use xlink:href="#mail-icon"></use>
-            </svg>
-          </button>
-        </div>
-        <span
-          class="students-reference__class students-reference__class--background-orange"
-          >VII A</span
-        >
-        <button class="btn-dots btn-dots--left" type="button">
-          <svg width="24" height="24">
-            <use xlink:href="#dots-icon"></use>
-          </svg>
-        </button>
-      </li>
-      <li class="students-reference__item">
-        <label class="students-reference__checkbox">
-          <input
-            class="visually-hidden students-reference__checkbox--input"
-            type="checkbox"
-            name="subscribe"
-            value=""
-          />
-          <span class="students-reference__checkmark"></span>
-        </label>
-        <div class="notes__main data-list data-list--name">
-          <a class="data-list__photo data-list__photo--sm"
-            ><img
-              src="https://img.freepik.com/free-photo/carefree-girl-with-brown-makeup-drinking-tea-at-balcony-photo-of-pleasant-brunette-woman-in-knitted-dress-enjoying-coffee_197531-11385.jpg?w=1060&t=st=1704573936~exp=1704574536~hmac=5137e5022f476c198e5637b21f818cdc7498cc85081852563ebaaab1a9309e4c"
-          /></a>
-          <a class="user-data__text text--trimmed user-data__text--size"
-            >Tony Soap</a
-          >
-        </div>
-        <span
-          class="students-reference__inform students-reference__inform--color"
-          >ID 123456789</span
-        >
-        <span class="students-reference__date">March 25, 2021</span>
-        <span class="students-reference__parents">James Soap</span>
-        <span class="students-reference__city">Jakarta</span>
-        <div class="students-reference__btn">
-          <button class="btn-icon btn-icon--sm" type="button">
-            <svg width="24" height="24">
-              <use xlink:href="#call-icon"></use>
-            </svg>
-          </button>
-          <button class="btn-icon btn-icon--sm" type="button">
-            <svg width="24" height="24">
-              <use xlink:href="#mail-icon"></use>
-            </svg>
-          </button>
-        </div>
-        <span
-          class="students-reference__class students-reference__class--background-yellow"
-          >VII A</span
-        >
-        <button class="btn-dots btn-dots--left" type="button">
-          <svg width="24" height="24">
-            <use xlink:href="#dots-icon"></use>
-          </svg>
-        </button>
-      </li>
-      <li class="students-reference__item students-reference__item--check">
-        <label class="students-reference__checkbox">
-          <input
-            class="visually-hidden students-reference__checkbox--input"
-            type="checkbox"
-            name="subscribe"
-            value=""
-            checked
-          />
-          <span class="students-reference__checkmark"></span>
-        </label>
-        <div class="notes__main data-list data-list--name">
-          <a class="data-list__photo data-list__photo--sm"
-            ><img
-              src="https://img.freepik.com/free-photo/carefree-girl-with-brown-makeup-drinking-tea-at-balcony-photo-of-pleasant-brunette-woman-in-knitted-dress-enjoying-coffee_197531-11385.jpg?w=1060&t=st=1704573936~exp=1704574536~hmac=5137e5022f476c198e5637b21f818cdc7498cc85081852563ebaaab1a9309e4c"
-          /></a>
-          <a class="user-data__text text--trimmed user-data__text--size"
-            >Karen Hope</a
-          >
-        </div>
-        <span
-          class="students-reference__inform students-reference__inform--color"
-          >ID 123456789</span
-        >
-        <span class="students-reference__date">March 25, 2021</span>
-        <span class="students-reference__parents">Justin Hope</span>
-        <span class="students-reference__city">Jakarta</span>
-        <div class="students-reference__btn">
-          <button class="btn-icon btn-icon--sm" type="button">
-            <svg width="24" height="24">
-              <use xlink:href="#call-icon"></use>
-            </svg>
-          </button>
-          <button class="btn-icon btn-icon--sm" type="button">
-            <svg width="24" height="24">
-              <use xlink:href="#mail-icon"></use>
-            </svg>
-          </button>
-        </div>
-        <span
-          class="students-reference__class students-reference__class--background-purple"
-          >VII A</span
-        >
-        <button class="btn-dots btn-dots--left" type="button">
-          <svg width="24" height="24">
-            <use xlink:href="#dots-icon"></use>
-          </svg>
-        </button>
-      </li>
-      <li class="students-reference__item">
-        <label class="students-reference__checkbox">
-          <input
-            class="visually-hidden students-reference__checkbox--input"
-            type="checkbox"
-            name="subscribe"
-            value=""
-          />
-          <span class="students-reference__checkmark"></span>
-        </label>
-        <div class="notes__main data-list data-list--name">
+        <div class="students-reference__data-list data-list">
           <a class="data-list__photo data-list__photo--sm"
             ><img
               src="https://img.freepik.com/free-photo/carefree-girl-with-brown-makeup-drinking-tea-at-balcony-photo-of-pleasant-brunette-woman-in-knitted-dress-enjoying-coffee_197531-11385.jpg?w=1060&t=st=1704573936~exp=1704574536~hmac=5137e5022f476c198e5637b21f818cdc7498cc85081852563ebaaab1a9309e4c"
@@ -296,14 +301,15 @@
             >Jordan Nico</a
           >
         </div>
-        <span
+        <div
           class="students-reference__inform students-reference__inform--color"
-          >ID 123456789</span
         >
-        <span class="students-reference__date">March 25, 2021</span>
-        <span class="students-reference__parents">Amanda Nico</span>
-        <span class="students-reference__city">Jakarta</span>
-        <div class="students-reference__btn">
+          ID 123456789
+        </div>
+        <div class="students-reference__date">March 25, 2021</div>
+        <div class="students-reference__parents">Amanda Nico</div>
+        <div class="students-reference__city">Jakarta</div>
+        <div class="students-reference__contact">
           <button class="btn-icon btn-icon--sm" type="button">
             <svg width="24" height="24">
               <use xlink:href="#call-icon"></use>
@@ -315,28 +321,33 @@
             </svg>
           </button>
         </div>
-        <span
+        <div
           class="students-reference__class students-reference__class--background-yellow"
-          >VII A</span
         >
-        <button class="btn-dots btn-dots--left" type="button">
-          <svg width="24" height="24">
-            <use xlink:href="#dots-icon"></use>
-          </svg>
-        </button>
+          VII A
+        </div>
+        <div class="students-reference__btn">
+          <button class="btn-dots btn-dots--left" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
       </li>
       <li class="students-reference__item students-reference__item--check">
-        <label class="students-reference__checkbox">
-          <input
-            class="visually-hidden students-reference__checkbox--input"
-            type="checkbox"
-            name="subscribe"
-            value=""
-            checked
-          />
-          <span class="students-reference__checkmark"></span>
-        </label>
-        <div class="notes__main data-list data-list--name">
+        <div class="students-reference__box">
+          <label class="students-reference__checkbox">
+            <input
+              class="visually-hidden students-reference__checkbox--input"
+              type="checkbox"
+              name="subscribe"
+              value=""
+              checked
+            />
+            <span class="students-reference__checkmark"></span>
+          </label>
+        </div>
+        <div class="students-reference__data-list data-list">
           <a class="data-list__photo data-list__photo--sm"
             ><img
               src="https://img.freepik.com/free-photo/carefree-girl-with-brown-makeup-drinking-tea-at-balcony-photo-of-pleasant-brunette-woman-in-knitted-dress-enjoying-coffee_197531-11385.jpg?w=1060&t=st=1704573936~exp=1704574536~hmac=5137e5022f476c198e5637b21f818cdc7498cc85081852563ebaaab1a9309e4c"
@@ -345,14 +356,15 @@
             >Nadila Adja</a
           >
         </div>
-        <span
+        <div
           class="students-reference__inform students-reference__inform--color"
-          >ID 123456789</span
         >
-        <span class="students-reference__date">March 25, 2021</span>
-        <span class="students-reference__parents">Jack Adja</span>
-        <span class="students-reference__city">Jakarta</span>
-        <div class="students-reference__btn">
+          ID 123456789
+        </div>
+        <div class="students-reference__date">March 25, 2021</div>
+        <div class="students-reference__parents">Jack Adja</div>
+        <div class="students-reference__city">Jakarta</div>
+        <div class="students-reference__contact">
           <button class="btn-icon btn-icon--sm" type="button">
             <svg width="24" height="24">
               <use xlink:href="#call-icon"></use>
@@ -364,27 +376,32 @@
             </svg>
           </button>
         </div>
-        <span
+        <div
           class="students-reference__class students-reference__class--background-orange"
-          >VII A</span
         >
-        <button class="btn-dots btn-dots--left" type="button">
-          <svg width="24" height="24">
-            <use xlink:href="#dots-icon"></use>
-          </svg>
-        </button>
+          VII A
+        </div>
+        <div class="students-reference__btn">
+          <button class="btn-dots btn-dots--left" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
       </li>
       <li class="students-reference__item">
-        <label class="students-reference__checkbox">
-          <input
-            class="visually-hidden students-reference__checkbox--input"
-            type="checkbox"
-            name="subscribe"
-            value=""
-          />
-          <span class="students-reference__checkmark"></span>
-        </label>
-        <div class="notes__main data-list data-list--name">
+        <div class="students-reference__box">
+          <label class="students-reference__checkbox">
+            <input
+              class="visually-hidden students-reference__checkbox--input"
+              type="checkbox"
+              name="subscribe"
+              value=""
+            />
+            <span class="students-reference__checkmark"></span>
+          </label>
+        </div>
+        <div class="students-reference__data-list data-list">
           <a class="data-list__photo data-list__photo--sm"
             ><img
               src="https://img.freepik.com/free-photo/carefree-girl-with-brown-makeup-drinking-tea-at-balcony-photo-of-pleasant-brunette-woman-in-knitted-dress-enjoying-coffee_197531-11385.jpg?w=1060&t=st=1704573936~exp=1704574536~hmac=5137e5022f476c198e5637b21f818cdc7498cc85081852563ebaaab1a9309e4c"
@@ -393,34 +410,39 @@
             >Johnny Ahmad</a
           >
         </div>
-        <span
+        <div
           class="students-reference__inform students-reference__inform--color"
-          >ID 123456789</span
         >
-        <span class="students-reference__date">March 25, 2021</span>
-        <span class="students-reference__parents">Danny Ahmad</span>
-        <span class="students-reference__city">Jakarta</span>
-        <div class="students-reference__btn">
+          ID 123456789
+        </div>
+        <div class="students-reference__date">March 25, 2021</div>
+        <div class="students-reference__parents">Danny Ahmad</div>
+        <div class="students-reference__city">Jakarta</div>
+        <div class="students-reference__contact">
           <button class="btn-icon btn-icon--sm" type="button">
             <svg width="24" height="24">
               <use xlink:href="#call-icon"></use>
             </svg>
           </button>
+
           <button class="btn-icon btn-icon--sm" type="button">
             <svg width="24" height="24">
               <use xlink:href="#mail-icon"></use>
             </svg>
           </button>
         </div>
-        <span
+        <div
           class="students-reference__class students-reference__class--background-yellow"
-          >VII A</span
         >
-        <button class="btn-dots btn-dots--left" type="button">
-          <svg width="24" height="24">
-            <use xlink:href="#dots-icon"></use>
-          </svg>
-        </button>
+          VII A
+        </div>
+        <div class="students-reference__btn">
+          <button class="btn-dots btn-dots--left" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
       </li>
     </ul>
     @@include('pagination.html')
