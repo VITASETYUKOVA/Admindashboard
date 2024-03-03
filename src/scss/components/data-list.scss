@@ -64,6 +64,34 @@
   width: rem(48);
   height: rem(48);
 
+
+  &--xl {
+    width: rem(120);
+    height: rem(120);
+  }
+
+
+
+  &:hover img {
+    opacity: 0;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+    transition: opacity 0.3s ease;
+  }
+}
+.data-list__photo--xl {
+  display: block;
+  flex-shrink: 0;
+  width: rem(120);
+    height: rem(120);
+
+
+ 
+
   &:hover img {
     opacity: 0;
   }
