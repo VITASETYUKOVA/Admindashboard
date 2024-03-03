@@ -1,6 +1,6 @@
 .btn-print,
 .btn-dots{
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   width: rem(46);
@@ -13,6 +13,13 @@
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
+
+  &--left {
+   margin-left: 70px;
+    
+   }
+ 
+
 
   &:hover {
     color: var(--color-purple);

@@ -13,7 +13,7 @@
   border: 2px solid currentColor;
   box-shadow: var(--bsh);
   transition: all 0.3s;
-
+background-color: transparent;
   &:hover {
     color: var(--main-color-text-hover);
   }
@@ -25,4 +25,14 @@
   &:disabled {
     @include disabled;
   }
+
+  &--wide {
+    padding: rem(12) rem(44);
+    gap: rem(16);
+  }
+
+  &--right {
+    margin-right: rem(24);
+  }
+
 }
