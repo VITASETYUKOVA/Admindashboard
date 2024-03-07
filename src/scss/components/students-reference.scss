@@ -126,6 +126,7 @@
   &.sublist__item--action {
     width: 3.73%;
     padding: rem(8);
+    margin-left: auto;
   }
 }
 
@@ -228,6 +229,7 @@
   width: 3.73%;
   padding: rem(8);
   display: flex;
+  margin-left: auto;
 }
 
 .students-reference__checkbox[type='checkbox'],
