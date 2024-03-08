@@ -1,0 +1,500 @@
+<section class="teachers-menu">
+  <div class="inner">
+    <h2 class="inner__title">Teachers</h2>
+    <nav class="inner__navigation teachers-menu__navigation--settings">
+      <ul class="settings__list">
+        <li class="settings__item">
+          <a
+            class="settings__link settings__icon"
+            href="/src/notification.html"
+          >
+            <svg width="32" height="32">
+              <use xlink:href="#bell-icon"></use>
+            </svg>
+            <span class="settings__activity"></span>
+          </a>
+        </li>
+        <li class="settings__item">
+          <a class="settings__link settings__icon" href="#">
+            <svg width="32" height="32">
+              <use xlink:href="#gear-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="settings__item">
+          <div class="admin-profile">
+            <div class="admin-profile__container">
+              <a
+                class="admin-profile__role admin-profile__role--name"
+                href="/src/user_dashboard.html"
+                >Nabila A.</a
+              >
+              <span class="admin-profile__role">Admin</span>
+            </div>
+            <a
+              class="admin-profile__photo photo photo--md"
+              href="/src/user_dashboard.html"
+            >
+              <img
+                src="https://img.freepik.com/free-photo/carefree-girl-with-brown-makeup-drinking-tea-at-balcony-photo-of-pleasant-brunette-woman-in-knitted-dress-enjoying-coffee_197531-11385.jpg?w=1060&t=st=1704573936~exp=1704574536~hmac=5137e5022f476c198e5637b21f818cdc7498cc85081852563ebaaab1a9309e4c"
+              />
+            </a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="search-menu">
+    <form
+      action="/search"
+      method="get"
+      class="search-menu__info search-menu__info--menu"
+    >
+      <input
+        class="search-menu__field"
+        type="text"
+        id="navsite"
+        name="search"
+        placeholder="Search here..."
+        required
+      />
+      <label for="search">
+        <svg width="32" height="32">
+          <use xlink:href="#search-icon"></use>
+        </svg>
+      </label>
+    </form>
+    <button class="btn-newest btn-newest--wide btn-newest--right" type="button">
+      Newest
+      <svg width="32" height="32">
+        <use xlink:href="#dropdown-icon"></use>
+      </svg>
+    </button>
+    @@include('buttons/btn-new-student.html')
+  </div>
+  <div class="teachers">
+    <ul class="teachers__list">
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Dimitres Viga</a>
+          <p class="teachers__subject">Mathematics</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Tom Housenburg</a>
+          <p class="teachers__subject">Science</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Dana Benevista</a>
+          <p class="teachers__subject">Art</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Salvadore Morbeau</a>
+          <p class="teachers__subject">Biology</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Maria Historia</a>
+          <p class="teachers__subject">History</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Jack Sally</a>
+          <p class="teachers__subject">Physics</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Lula Beatrice</a>
+          <p class="teachers__subject">Algorithm</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Nella Vita</a>
+          <p class="teachers__subject">Engilsh</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Nadia Laravela</a>
+          <p class="teachers__subject">Programming</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Dakota Farral</a>
+          <p class="teachers__subject">Science</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Miranda Adila</a>
+          <p class="teachers__subject">Art</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+      <li class="teachers__item">
+        <div class="teachers__data-list data-list">
+          <a class="data-list__photo data-list__photo--xl"
+            ><img
+              src="https://img.freepik.com/premium-photo/portrait-of-seductive-pleased-woman-in-white-sweater-laughing-and-grabbing-her-head_171337-113841.jpg?w=360"
+          /></a>
+          <a class="teachers__name">Indiana Barker</a>
+          <p class="teachers__subject">Biology</p>
+        </div>
+        <div class="teachers__contact">
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#call-icon"></use>
+            </svg>
+          </button>
+          <button
+            class="btn-icon btn-icon--sm btn-icon--background-purple"
+            type="button"
+          >
+            <svg width="24" height="24">
+              <use xlink:href="#mail-icon"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="teachers__btn">
+          <button class="btn-dots" type="button">
+            <svg width="24" height="24">
+              <use xlink:href="#dots-icon"></use>
+            </svg>
+          </button>
+        </div>
+      </li>
+    </ul>
+    @@include('pagination.html')
+  </div>
+</section>
