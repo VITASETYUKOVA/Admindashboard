@@ -5,64 +5,7 @@
   background-color: var(--site-background);
 }
 
-.teachers-menu__inner {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: rem(40);
-}
 
-.teachers-menu__title {
-  text-decoration: none;
-  font: 700 rem(36) / 1.5 var(--main-font);
-  color: var(--color-text);
-  padding: 0;
-  margin: 0;
-}
-
-.teachers-menu__search {
-  display: flex;
-  align-items: center;
-  margin-bottom: rem(40);
-}
-
-.teachers-menu__info {
-  position: relative;
-  color: var(--color-purple);
-  min-width: rem(350);
-  margin-left: auto;
-  align-items: center;
-
-  &--menu {
-    margin: 0 auto 0 0;
-  }
-
-  label {
-    position: absolute;
-    left: rem(32);
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  svg {
-    display: block;
-  }
-}
-
-.teachers-menu__field {
-  background-color: var(--color-white);
-  padding: rem(16.5) rem(47) rem(16.5) rem(80);
-  max-width: 100%;
-  border-radius: 2.222em;
-  border: 0;
-  transition: all 0.3s;
-  display: inline-flex;
-  line-height: 1.5;
-  outline: 0;
-
-  &:focus {
-    outline: 2px solid var(--color-purple);
-  }
-}
 .teachers__list {
   margin: 0 0 rem(40) 0;
   gap: rem(40);

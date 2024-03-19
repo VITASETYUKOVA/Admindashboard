@@ -1,4 +1,7 @@
-.btn-newest {
+.btn-newest,
+.btn-month,
+.btn-year
+ {
   display: inline-flex;
   justify-content: center;
   text-align: center;
@@ -9,6 +12,7 @@
   padding: rem(13) rem(45);
   cursor: pointer;
   max-width: 100%;
+  min-width: rem(207);
   border-radius: 2.222em;
   border: 2px solid currentColor;
   box-shadow: var(--bsh);

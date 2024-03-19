@@ -1,0 +1,113 @@
+.school-calendar__greed {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.school-calendar__week {
+  border: none;
+  text-align: center;
+  color: var(--color-grey-3);
+  margin-bottom: rem(13);
+}
+
+.school-calendar__day {
+  padding:0 rem(10) 0;
+}
+
+.school-calendar__note {
+  &--shape-yellow,
+  &--shape-orange,
+  &--shape-purple {
+    &::before {
+      position: absolute;
+      content: '';
+      width: rem(48);
+      height: rem(48);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+    }
+  }
+  &--shape-yellow::before {
+    background-color: var(--color-yellow);
+  }
+  &--shape-purple::before {
+    background-color: var(--color-purple);
+  }
+  &--shape-orange::before {
+    background-color: var(--color-orange);
+  }
+}
+.school-calendar__note {
+  &.school-calendar__note--shape-orange,
+  &.school-calendar__note.school-calendar__note--shape-yellow,
+  &.school-calendar__note.school-calendar__note--shape-purple {
+    color: var(--color-white);
+  }
+}
+.school-calendar__number--marked {
+  background-color: var(--color-grey);
+}
+
+.school-calendar__number {
+  &.school-calendar__number--off {
+    color: var(--color-grey);
+  }
+}
+
+.school-calendar__note {
+  &.school-calendar__note--red {
+    color: var(--color-red);
+  }
+}
+
+.school-calendar__note,
+.school-calendar__number {
+  padding: 0;
+  width: rem(65);
+  height: rem(74);
+  position: relative;
+  z-index: 2;
+  border: 1px solid var(--color-grey);
+  text-align: center;
+  color: var(--color-text);
+
+  &--shape {
+    color: var(--color-white);
+  }
+
+  &--purple {
+    background-color: var(--color-purple);
+  }
+
+  &--yellow {
+    background-color: var(--color-yellow);
+  }
+
+  &--orange {
+    background-color: var(--color-orange);
+  }
+}
+
+.school-calendar {
+  background-color: var(--color-white);
+  border-radius: 1.111em;
+  padding: rem(32);
+  grid-area: calendar;
+}
+
+.school-calendar__inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(32);
+}
+
+.school-calendar__sorting {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: rem(6);
+}
