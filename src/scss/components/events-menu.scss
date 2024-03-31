@@ -1,16 +1,17 @@
 .events-menu {
   height: 100%;
-  padding: rem(50) rem(50) rem(40) 0;
   background-color: var(--site-background);
   grid-column-start: 2;
   grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
 
 .content-navigation {
   display: flex;
   justify-content: space-between;
+}
+
+.events-menu__wrapper {
+  padding: rem(50) rem(50) rem(40) 0;
 }
 
 .content-navigation__title {
@@ -21,6 +22,16 @@
   margin: 0;
 }
 
+.content-navigation__box {
+  display: flex;
+  margin-left: auto;
+}
+
+.content-navigation--settings {
+  &.content-navigation__menu {
+    margin-left: rem(62);
+  }
+}
 .content-navigation__search {
   display: flex;
   align-items: center;
