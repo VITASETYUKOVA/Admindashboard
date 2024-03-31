@@ -3,3 +3,14 @@
   grid-template-columns: auto 1fr auto;
   height: 100%;
 }
+
+.page-tab {
+  height: 100%;
+  overflow-y: auto;
+  column-gap: rem(50);
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: rem(150) auto ;
+  flex-shrink: 0;
+  background-color: rgba(243, 244, 255, 1);
+}
