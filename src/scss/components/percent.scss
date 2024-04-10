@@ -1,0 +1,23 @@
+.percent {
+  &--green {
+    span:nth-child(1)::after {
+      color: var(--color-green);
+      content: '%';
+    }
+    span:nth-child(1) {
+      color: var(--color-green);
+      font-weight: 600;
+    }
+  }
+
+  &--red {
+    span:nth-child(1)::after {
+      color: var(--color-red);
+      content: '%';
+    }
+    span:nth-child(1) {
+      color: var(--color-red);
+      font-weight: 600;
+    }
+  }
+}

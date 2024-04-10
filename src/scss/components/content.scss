@@ -1,0 +1,23 @@
+.content {
+  grid-area: content;
+  background-color: var(--color-white);
+  border-radius: 1.111em;
+  padding: rem(32);
+  min-width: rem(847);
+}
+
+.content__item {
+  &--unpaid-student {
+    padding: rem(28) 0;
+    display: grid;
+    grid-template-columns: 1fr 20% 20% 16% rem(48);
+    gap: rem(10);
+    align-items: center;
+  }
+}
+
+.content__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

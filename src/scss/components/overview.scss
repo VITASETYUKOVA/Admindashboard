@@ -1,0 +1,43 @@
+.overview__item {
+  &.overview__item--statistic {
+    border-radius: 1.111em;
+    background-color: var(--color-white);
+    padding: rem(30) rem(32);
+    width: 100%;
+    min-width: rem(360);
+
+    &:not(:last-child) {
+      margin-right: rem(40);
+    }
+
+    &:last-child {
+      min-width: rem(675);
+    }
+  }
+}
+
+.overview__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.overview__item {
+  &--teachers {
+    border-radius: 1.111em;
+    background-color: var(--color-white);
+    margin-right: rem(40);
+    padding: rem(30) rem(24) rem(30) rem(32);
+    width: 100%;
+    min-width: rem(360);
+  }
+}
+
+.overview {
+  grid-area: overview;
+}
+
+.overview__chart {
+  margin-left: rem(30);
+}

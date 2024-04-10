@@ -1,0 +1,15 @@
+.base-content {
+  height: 100%;
+  overflow: auto;
+  padding: rem(50);
+  display: grid;
+  grid-template-areas:  "finance-menu finance-menu"
+                        "overview overview"
+                        "balance-analytics balance-analytics"
+                        "content school-expense"; 
+  grid-template-columns: 1fr 1fr;
+  gap: rem(40);
+  flex-grow: 1;
+  background-color: rgba(243, 244, 255, 1);
+}
+
