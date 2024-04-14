@@ -1,36 +1,25 @@
-.overview__item {
-  &.overview__item--statistic {
-    border-radius: 1.111em;
-    background-color: var(--color-white);
-    padding: rem(30) rem(32);
-    width: 100%;
-    min-width: rem(360);
-
-    &:not(:last-child) {
-      margin-right: rem(40);
-    }
-
-    &:last-child {
-      min-width: rem(675);
-    }
-  }
-}
-
 .overview__list {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+  gap: 3%;
 }
 
 .overview__item {
+  border-radius: 1.111em;
+  background-color: var(--color-white);
+  padding: rem(30) rem(32);
+  width: 24%;
   &--teachers {
     border-radius: 1.111em;
     background-color: var(--color-white);
-    margin-right: rem(40);
     padding: rem(30) rem(24) rem(30) rem(32);
-    width: 100%;
-    min-width: rem(360);
+    width: 24%;
+  }
+
+  &--balance {
+    width: 46%;
   }
 }
 
@@ -40,4 +29,12 @@
 
 .overview__chart {
   margin-left: rem(30);
+  flex-grow: 1;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+  }
 }

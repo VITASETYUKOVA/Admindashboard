@@ -3,7 +3,7 @@
 }
 
 .menu__wrapper {
-  padding: rem(50) rem(50) 0 0;
+  padding: rem(50) 0 0 0;
 }
 
 .content-navigation__title {
@@ -66,4 +66,7 @@
   &:focus {
     outline: 2px solid var(--color-purple);
   }
+}
+.content-navigation__field:focus ~ label {
+  display: block;
 }

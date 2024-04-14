@@ -3,8 +3,6 @@
   background-color: var(--color-white);
   padding: rem(32);
   grid-area: school-expense;
-  max-width: rem(588);
-  
 }
 
 .school-expense__list {
@@ -20,7 +18,7 @@
   gap: rem(10);
   align-items: center;
   margin-bottom: rem(24);
-  
+
   &:first-child {
     margin-top: rem(44);
   }
