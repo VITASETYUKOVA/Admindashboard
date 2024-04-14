@@ -1,0 +1,16 @@
+.status {
+  font-weight: 600;
+  line-height: 1.5;
+
+  &--complete {
+    color: var(--color-green);
+  }
+  
+  &--pending {
+    color: var(--color-grey-3);
+  }
+
+  &--canceled {
+    color: var(--color-red);
+  }
+}

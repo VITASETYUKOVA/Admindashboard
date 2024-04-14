@@ -4,11 +4,10 @@
   min-width: rem(350);
   margin-left: auto;
   align-items: center;
-  
-  &--menu{
+
+  &--menu {
     margin: 0 auto 0 0;
   }
-
 
   svg {
     position: absolute;
@@ -38,4 +37,7 @@
       outline: 2px solid var(--color-purple);
     }
   }
+}
+.header__field:focus ~ label {
+  display: block;
 }

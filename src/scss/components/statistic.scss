@@ -1,23 +1,5 @@
 .statistic {
-  border-radius: 1.111em;
-  background-color: var(--color-white);
-  grid-area: statistic;
-  padding: rem(45) rem(47);
-  grid-area: statistic;
-}
-
-.statistic__list {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.statistic__link {
-  
   display: inline-flex;
- 
   align-items: center;
   text-decoration: none;
   color: var(--color-white);
@@ -36,14 +18,10 @@
   }
 }
 
-.statistic__item {
-  list-style-type: none;
-}
-
 .statistic__text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-left: rem(30);
 }
 
@@ -61,4 +39,16 @@
   color: var(--color-grey-3);
   margin: 0;
   padding: 0;
+}
+
+.statistic__duration {
+  text-decoration: none;
+  line-height: 1.5;
+  color: var(--color-grey-3);
+  margin: 0;
+  padding: 0;
+}
+
+.statistic__wrapper {
+  display: flex;
 }

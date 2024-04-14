@@ -1,0 +1,24 @@
+.balance-analytics {
+  grid-area: balance-analytics;
+  border-radius: rem(20);
+  background-color: var(--color-white);
+  padding: rem(32) rem(32) rem(32) rem(43);
+}
+
+.balance-analytics__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: rem(24);
+}
+
+.balance-analytics__chart {
+  img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+.chart-text {
+  display: flex;
+}

@@ -22,6 +22,9 @@
   &--foods {
     background-color: var(--color-text);
   }
+  &--trending {
+    background-color: var(--color-red);
+  }
 
   &--sm {
     width: rem(40);
@@ -31,6 +34,11 @@
   &--md {
     width: rem(48);
     height: rem(48);
+  }
+
+  &--mg {
+    width: rem(56);
+    height: rem(56);
   }
 
   &--lg {

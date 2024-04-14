@@ -1,0 +1,19 @@
+.result {
+  border-radius: 1.111em;
+  background-color: var(--color-white);
+  grid-area: statistic;
+  padding: rem(45) rem(47);
+  grid-area: result;
+}
+
+.result__list {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.result__item {
+  list-style-type: none;
+}

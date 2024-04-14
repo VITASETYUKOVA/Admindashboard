@@ -1,5 +1,6 @@
 .btn-newest,
 .btn-month,
+.btn-month-sort,
 .btn-year
  {
   display: inline-flex;
@@ -38,5 +39,9 @@ background-color: transparent;
   &--right {
     margin-right: rem(24);
   }
+  &.btn-month-sort {
+    margin-left: rem(48);
+  }
+
 
 }
