@@ -22,3 +22,10 @@
     }
   }
 }
+
+.percent {
+  &::after {
+    content: '%';
+  } 
+}
+

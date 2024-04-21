@@ -76,6 +76,7 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "jquery-circle-progress": "^1.2.2",
     "swiper": "^8.4.5"
   }
 }
