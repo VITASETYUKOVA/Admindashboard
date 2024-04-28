@@ -1,17 +1,7 @@
 .events-menu {
   height: 100%;
-  
- grid-area: header;
+  background-color: var(--site-background);
+  grid-column-start: 2;
+  grid-column-end: 4;
 }
 
-.events-content {
-padding: 3.125rem 3.125rem 2.5rem 3.125rem;
-    overflow: auto;
-    display: grid;
-    grid-template-areas:
-        "header header"
-        "calendar schedule";
-    grid-template-columns: 1fr auto;
-    gap: 2.5rem;
-    background-color: var(--site-background);
-}

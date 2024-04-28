@@ -1,5 +1,8 @@
 .schedule {
-grid-area: schedule;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .schedule__list {
