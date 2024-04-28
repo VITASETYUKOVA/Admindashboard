@@ -1,0 +1,184 @@
+.food-menu {
+  height: 100%;
+  overflow: auto;
+  background-color: var(--site-background);
+  padding: 0 rem(50) rem(40) rem(40);
+}
+
+.food-list {
+  background-color: var(--color-white);
+  border-radius: 1.111em;
+  padding: rem(21) rem(16) rem(32) rem(33);
+  margin-top: rem(40);
+}
+
+.food-list__action {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(40);
+  align-items: center;
+}
+
+.nav {
+  --nav-border: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: rem(20);
+  min-width: rem(485);
+  position: relative;
+  z-index: 10;
+  border-bottom: var(--nav-border) solid var(--color-grey-2);
+}
+
+.nav__link {
+  display: block;
+  font-size: rem(14);
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  padding: rem(16) rem(25);
+  border-bottom: 4px solid transparent;
+  margin-bottom: calc(-1 * var(--nav-border));
+
+  &--active {
+    color: var(--color-purple);
+    border-bottom-color: currentColor;
+    transition: border-color 0.2s linear;
+  }
+
+  &:hover {
+    color: var(--color-purple-hover);
+  }
+}
+
+.dishes {
+  margin: 0 0 rem(56) 0;
+  padding: 0;
+  list-style: none;
+  gap: rem(32);
+  display: grid;
+}
+
+.dishes__item {
+  display: grid;
+  grid-template-columns: rem(150) 1fr 7% 17% 13% 7% 5%;
+  gap: rem(40);
+  align-items: center;
+}
+
+.dishes__comment {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.dishes__link {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  font-size: rem(14);
+  line-height: 1.56;
+  color: var(--color-white);
+  padding: rem(10) rem(39);
+  cursor: pointer;
+  max-width: rem(120);
+  border-radius: 2.222em;
+  border: 0;
+  transition: all 0.3s;
+  background-color: var(--color-purple);
+  margin-bottom: rem(17);
+
+  &:hover,
+  &:active {
+    background-color: var(--main-color-text-hover);
+  }
+}
+
+.dishes__rating svg {
+  color: var(--color-yellow);
+  vertical-align: middle;
+}
+
+.dishes__text {
+  color: var(--color-grey-3);
+  margin-top: rem(4);
+}
+
+.dishes__rating {
+  margin-right: rem(8);
+}
+
+.dishes__sorting {
+  align-self: start;
+}
+
+.dishes__order {
+  display: flex;
+  align-items: center;
+  gap: rem(24);
+}
+
+.dishes__paragraph {
+  display: flex;
+  flex-direction: column;
+}
+
+.dishes__percent {
+  font-weight: 700;
+  font-size: rem(24);
+  color: var(--color-text);
+}
+
+.dishes__mark svg,
+.dishes__level svg {
+  cursor: pointer;
+  color: var(--color-purple);
+  vertical-align: middle;
+}
+
+.dishes__interest {
+  display: flex;
+  align-items: center;
+  gap: rem(16);
+}
+
+.circle-bar {
+  --border: 6px;
+  --circle: 60px;
+  position: relative;
+  width: var(--circle);
+  height: var(--circle);
+  border-radius: 50%;
+  border: var(--border) solid var(--color-purple);
+}
+
+.circle-bar::before {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--border));
+  left: 50%;
+  width: calc(var(--circle) / 2);
+  height: var(--circle);
+  background: white;
+  border-top-right-radius: var(--circle);
+  border-bottom-right-radius: var(--circle);
+  border: var(--border) solid var(--color-grey-2);
+  border-left: none;
+}
+
+.circle-bar__percent {
+  &.percent {
+    font-size: rem(14);
+    font-weight: 600;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

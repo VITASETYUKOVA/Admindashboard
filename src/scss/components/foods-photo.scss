@@ -1,6 +1,5 @@
 .foods-photo {
   display: block;
-  margin-bottom: rem(24);
   border-radius: rem(18);
   overflow: hidden;
   background-color: var(--color-grey-2);
@@ -19,9 +18,15 @@
 
   &--md {
     aspect-ratio: 1.95/1;
+    margin-bottom: rem(24);
   }
 
   &--lg {
     aspect-ratio: 1.5/1;
+  }
+
+  &--ff {
+    aspect-ratio: 1/1;
+   
   }
 }
