@@ -5,8 +5,7 @@
 }
 
 .calendar {
- 
-grid-area: calendar;
+  grid-area: calendar;
   padding: rem(32) rem(32) rem(108) rem(32);
   background-color: var(--color-white);
   border-radius: rem(20);
@@ -242,6 +241,7 @@ grid-area: calendar;
     }
   }
 }
+
 .calendar__number::before {
   content: attr(data-day);
   position: absolute;
