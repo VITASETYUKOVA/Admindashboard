@@ -19,6 +19,18 @@
   align-items: center;
   margin-bottom: rem(24);
 
+  &--students {
+    grid-template-columns: 1fr 32% 22% 10%;
+
+    &:first-child {
+      margin-top: rem(32);
+    }
+
+    &:last-child {
+      margin-bottom: rem(48);
+    }
+  }
+
   &:first-child {
     margin-top: rem(44);
   }

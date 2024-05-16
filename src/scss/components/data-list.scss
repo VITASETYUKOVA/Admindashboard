@@ -77,6 +77,14 @@
     height: rem(60);
   }
 
+  &--mg {
+    width: rem(200);
+    height: rem(200);
+    border: 8px solid var(--color-white);
+    top: -140px;
+    position: absolute;
+  }
+
   &:hover img {
     opacity: 0;
   }
