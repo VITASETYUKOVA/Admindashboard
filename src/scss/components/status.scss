@@ -4,13 +4,16 @@
 
   &--complete {
     color: var(--color-green);
+    justify-self: end;
   }
   
   &--pending {
     color: var(--color-grey-3);
+    justify-self: end;
   }
 
   &--canceled {
     color: var(--color-red);
+    justify-self: end;
   }
 }

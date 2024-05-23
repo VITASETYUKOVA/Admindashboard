@@ -1,0 +1,17 @@
+.food-navigation{
+  height: 100%;
+  grid-area: header;
+}
+
+.food-details {
+  padding: 0 3.125rem 2.5rem 3.125rem;
+  overflow: auto;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'food-description comments';
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+  gap: 2.5rem;
+  background-color: var(--site-background);
+}
