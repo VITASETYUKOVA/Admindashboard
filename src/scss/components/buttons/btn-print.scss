@@ -22,4 +22,16 @@
   &--color {
     color: var(--color-white);
   }
+
+  &--chat {
+    color: var(--color-grey-3);
+  }
+
+  &--file{
+    
+    position: absolute;
+    top:rem(13);
+    right:rem(153);
+  }
+
 }
