@@ -1,4 +1,4 @@
-.notes  {
+.notes {
   margin-bottom: rem(64);
 }
 
@@ -32,7 +32,20 @@
   display: flex;
   padding: rem(16) 0 rem(23) 0;
   border-bottom: solid 1px var(--color-grey-3);
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &--additionally {
+    padding: rem(12) 0 rem(20) 0;
+  }
 }
+
 .notes__main {
   &.data-list {
     display: flex;
