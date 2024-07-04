@@ -1,0 +1,148 @@
+.teachers-contact {
+  height: 100%;
+  overflow: auto;
+  padding: rem(50) rem(50) rem(40) rem(50);
+  background-color: var(--site-background);
+}
+
+.teachers-contact__inner {
+  padding: rem(12) rem(161) rem(57) rem(40);
+  background-color: var(--color-white);
+  border-radius: rem(20);
+  border-top: solid rem(60) var(--color-purple);
+  position: relative;
+  margin-bottom: rem(40);
+}
+
+.teachers-contact__form {
+  display: grid;
+  grid-row-gap: rem(24);
+  grid-column-gap: rem(40);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.teachers-contact__heading {
+  padding: 0;
+  font-weight: 600;
+  margin-bottom: rem(16);
+  color: var(--color-text);
+}
+
+.teachers-contact__story {
+  &--input {
+    min-height: rem(146);
+    color: var(--color-grey-3);
+    min-width: rem(589);
+  }
+}
+
+.teachers-contact__quantity {
+  margin-left: auto;
+  margin-top: rem(12);
+  font-size: rem(12);
+  color: var(--color-grey-3);
+}
+
+.teachers-contact__story {
+  width: 100%;
+  border-radius: rem(5);
+  padding: rem(15) rem(14) rem(14) rem(14);
+  cursor: pointer;
+  display: inline-block;
+  text-align: left;
+  position: relative;
+  font-size: rem(14);
+  line-height: 1.5;
+  border: 1px solid var(--color-grey-2);
+}
+
+input[type='file'] {
+  visibility: hidden;
+  position: relative;
+}
+
+.teachers-contact__gen {
+  display: flex;
+  flex-direction: column;
+}
+.teachers-contact__month {
+  display: inline-flex;
+  gap: rem(24);
+}
+
+.teachers-contact__data {
+  border: none;
+}
+
+.field {
+  font-size: rem(14);
+  color: var(--color-grey-3);
+  padding: rem(15) rem(12) rem(14);
+  border: 1px solid var(--color-grey-2);
+  border-radius: rem(5);
+}
+
+.teachers-contact__wrapper {
+  padding: rem(12) rem(161) rem(40) rem(40);
+  background-color: var(--color-white);
+  border-radius: rem(20);
+  border-top: solid rem(60) var(--color-purple);
+  position: relative;
+  margin-bottom: rem(40);
+}
+
+.teachers-contact__education {
+  border: none;
+}
+
+.teachers-contact__info {
+  display: grid;
+  grid-row-gap: rem(24);
+  grid-column-gap: rem(40);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.teachers-contact__title {
+  text-decoration: none;
+  font: 700 rem(24) / 1.5 var(--main-font);
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: rem(-50);
+}
+
+.teachers-contact__image {
+  color: var(--color-grey-3);
+}
+
+input[type='file']:before {
+  content: attr(placeholder);
+  visibility: visible;
+  cursor: pointer;
+  border: 1px dashed var(--color-grey-2);
+  border-radius: rem(5);
+  display: inline-block;
+  width: rem(150);
+  height: rem(150);
+  top: 0;
+  padding: rem(60) rem(11) rem(63) rem(10);
+  font-size: rem(14);
+  line-height: rem(21);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.teachers-contact__wrapper {
+  padding: rem(12) rem(161) rem(40) rem(40);
+  background-color: var(--color-white);
+  border-radius: rem(20);
+  border-top: solid rem(60) var(--color-purple);
+}
+
+.teachers-contact__action {
+  display: flex;
+  gap: rem(26);
+  justify-content: end;
+}

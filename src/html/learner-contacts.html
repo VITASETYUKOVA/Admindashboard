@@ -1,0 +1,239 @@
+<section class="learner-contacts">
+  @@include('learner-navigation.html')
+  <div class="learner-contacts__inner">
+    <h2 class="learner-contacts__title">Student Details</h2>
+    <fieldset class="learner-contacts__data">
+      <form
+        class="learner-contacts__info"
+        action="#"
+        method="post"
+        id="learner-contacts__info"
+      >
+      <div class="learner-contacts__form">
+      <div class="learner-photo">
+        <label class="learner-gen__heading" for="authphoto"
+          >Photo *</label
+        >
+        <input
+          class="learner-gen__image learner-gen__image--input"
+          id="image"
+          type="file"
+          placeholder="Drag and drop or click here to select file"
+        />
+      </div>
+          <div class="learner-gen gen--first-name">
+            <label class="learner-gen__heading" for="authname"
+              >First Name *</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authname"
+              name="user name"
+              placeholder="Samantha"
+              required
+            />
+          </div>
+          <div class="learner-gen learner-gen--last name">
+            <label class="learner-gen__heading" for="authlastname"
+              >Last Name *</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authlastname"
+              name="user lastname"
+              placeholder="Historia"
+              required
+            />
+          </div>
+          <div class="learner-gen learner-gen--date">
+            <label class="learner-gen__heading" for="authbirth"
+              >Date of Birth*</label
+            >
+            <div class="learner-gen__birth">
+            <input
+              class="field"
+              type="text"
+              id="authbirth"
+              name="user birth"
+              placeholder="24 Februari 1997"
+              required
+            />
+            <input
+            class="field"
+            type="text"
+            id="authplace"
+            name="user place"
+            placeholder="Jakarta"
+            required
+          />
+          </div>
+        </div>
+          <div class="learner-gen learner-gen--parent">
+          <label class="learner-gen__heading" for="authlastname"
+          >Parent Name *</label
+        >
+        <input
+          class="field"
+          type="text"
+          id="authparentname"
+          name="user parentname"
+          placeholder="Mana William"
+          required
+        />
+      </div>
+          <div class="learner-gen learner-gen--email">
+            <label class="learner-gen__heading" for="authemail"
+              >Email *</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authmail"
+              name="user email"
+              placeholder="Historia@mail.com"
+              required
+            />
+          </div>
+          <div class="learner-gen learner-gen--phone">
+            <label class="learner-gen__heading" for="authphone"
+              >Phone *</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authphone"
+              name="user phone"
+              placeholder="+1234567890"
+              required
+            />
+          </div>
+          <div class="learner-gen learner-gen--address">
+            <label class="learner-gen__heading" for="authadress"
+              >Address *</label
+            >
+            <textarea
+              class="learner-gen__story learner-gen__story--input"
+              id="story"
+              type="text"
+              name="add"
+              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            ></textarea>
+            <span class="learner-gen__quantity">0/2000</span>
+          </div>
+        </div>
+      </form>
+    </fieldset>
+  </div>
+  <div class="learner-contacts__wrapper">
+    <h2 class="learner-contacts__title">Parent Details</h2>
+    <fieldset class="learner-contacts__parents">
+      <form
+        class="learner-contacts__info"
+        action="#"
+        method="post"
+        id="learner-contacts__info"
+      >
+            <div class="learner-gen">
+        <label class="learner-gen__heading" for="authname"
+          >First Name *</label
+        >
+        <input
+          class="field"
+          type="text"
+          id="authname"
+          name="user name"
+          placeholder="Mana"
+          required
+        />
+            </div>
+        <div class="learner-gen">
+          <label class="learner-gen__heading" for="authlastname"
+            >Last Name *</label
+          >
+          <input
+            class="field"
+            type="text"
+            id="authlastname"
+            name="user lastname"
+            placeholder="William"
+            required
+          />
+        </div>
+          <div class="learner-gen">
+            <label class="learner-gen__heading" for="authemail"
+              >Email *</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authmail"
+              name="user email"
+              placeholder="Mana@mail.com"
+              required
+            />
+          </div>
+          <div class="learner-gen">
+            <label class="learner-gen__heading" for="authphone"
+              >Phone *</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authphone"
+              name="user phone"
+              placeholder="+1234567890"
+              required
+            />
+          </div>
+            <div class="learner-gen">
+              <label class="learner-gen__heading" for="authadress"
+                >Address *</label
+              >
+              <textarea
+                class="learner-gen__story learner-gen__story--input"
+                id="story"
+                type="text"
+                name="add"
+                placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+              ></textarea>
+              <span class="learner-gen__quantity">0/2000</span>
+            </div>
+            <div class="learner-gen">
+            <legend class="learner-gen__heading" for="authpayments"
+            >Payments *</legend>
+            <ul class="learner-gen__list">
+              <li class="learner-gen__item">
+                <label class="control">
+                  <input
+                    class="visually-hidden control__input"
+                    type="radio"
+                    name="radio"
+                    value="Cash"
+                    checked
+                  />
+                  <span class="control__mark"></span>
+                  <span class="control__label">Cash</span>
+                </label>
+              </li>
+              <li class="learner-gen__item">
+                <label class="control">
+                  <input
+                    class="visually-hidden control__input"
+                    type="radio"
+                    name="radio"
+                    value="Debit"
+                    
+                  />
+                  <span class="control__mark"></span>
+                  <span class="control__label">Debit</span>
+                </label>
+              </li>
+                         </ul>
+                        </div>
+                        </div> 
+  <div class="learner-gen__action">
+    @@include('buttons/btn-draft.html') @@include('buttons/btn.html')
+  </div>
+</section>

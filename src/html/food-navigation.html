@@ -1,0 +1,72 @@
+<section class="food-navigation menu">
+  <header class="menu__wrapper">
+    <div class="content-navigation">
+      <h2 class="content-navigation__title">Food Details</h2>
+      <div class="content-navigation__box">
+        <div class="content-navigation__search">
+          <form
+            action="/search"
+            method="get"
+            class="content-navigation__info content-navigation__info--menu"
+          >
+            <label for="search">
+              <svg width="32" height="32">
+                <use xlink:href="#search-icon"></use>
+              </svg>
+            </label>
+            <input
+              class="content-navigation__field"
+              type="text"
+              id="navsite"
+              name="search"
+              placeholder="Search here..."
+              required
+            />
+          </form>
+        </div>
+        <nav class="content-navigation__menu content-navigation--settings">
+          <ul class="settings__list">
+            <li class="settings__item">
+              <a
+                class="settings__link settings__icon"
+                href="/src/notification.html"
+              >
+                <svg width="32" height="32">
+                  <use xlink:href="#bell-icon"></use>
+                </svg>
+                <span class="settings__activity"></span>
+              </a>
+            </li>
+            <li class="settings__item">
+              <a class="settings__link settings__icon" href="#">
+                <svg width="32" height="32">
+                  <use xlink:href="#gear-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="settings__item">
+              <div class="admin-profile">
+                <div class="admin-profile__container">
+                  <a
+                    class="admin-profile__role admin-profile__role--name"
+                    href="/src/user_dashboard.html"
+                    >Nabila A.</a
+                  >
+                  <span class="admin-profile__role">Admin</span>
+                </div>
+                <a
+                  class="admin-profile__photo photo photo--md"
+                  href="/src/user_dashboard.html"
+                >
+                  <img
+                    src="https://img.freepik.com/free-photo/carefree-girl-with-brown-makeup-drinking-tea-at-balcony-photo-of-pleasant-brunette-woman-in-knitted-dress-enjoying-coffee_197531-11385.jpg?w=1060&t=st=1704573936~exp=1704574536~hmac=5137e5022f476c198e5637b21f818cdc7498cc85081852563ebaaab1a9309e4c"
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+</section>
