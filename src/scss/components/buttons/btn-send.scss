@@ -1,0 +1,37 @@
+.btn-send {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1.56;
+  background: var(--color-purple);
+  color: var(--color-white);
+  padding: rem(16) rem(24);
+  cursor: pointer;
+  max-width: 100%;
+  min-width: rem(136);
+  border-radius: 2.222em;
+  border: 2px solid currentColor;
+  box-shadow: var(--bsh);
+  transition: all 0.3s;
+  margin-left: auto;
+  position: absolute;
+  right: rem(8);
+  top: rem(8);
+
+  &:hover {
+    color: var(--main-color-text-hover);
+  }
+
+  &:active {
+    outline: 0;
+  }
+
+  &:disabled {
+    @include disabled;
+  }
+
+  &--message {
+    gap: rem(8);
+  }
+}

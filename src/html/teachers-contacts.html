@@ -1,0 +1,194 @@
+<section class="teachers-contact">
+  @@include('teacher-navigation.html')
+  <div class="teachers-contact__inner">
+    <h2 class="teachers-contact__title">Personal Details</h2>
+    <fieldset class="teachers-contact__data">
+      <form
+        class="teachers-contact__info"
+        action="#"
+        method="post"
+        id="teachers-contact__info"
+      >
+        <div class="teachers-contact__form">
+          <div class="teachers-contact__gen">
+            <label class="teachers-contact__heading" for="authname"
+              >First Name *</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authname"
+              name="user name"
+              placeholder="Maria"
+              required
+            />
+          </div>
+          <div class="teachers-contact__gen">
+            <label class="teachers-contact__heading" for="authlastname"
+              >Last Name *</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authlastname"
+              name="user lastname"
+              placeholder="Historia"
+              required
+            />
+          </div>
+          <div class="teachers-contact__gen">
+            <label class="teachers-contact__heading" for="authmail"
+              >Email *</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authemail"
+              name="user email"
+              placeholder="Historia@mail.com"
+              required
+            />
+          </div>
+          <div class="teachers-contact__gen">
+            <label class="teachers-contact__heading" for="authphone"
+              >Phone *</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authphone"
+              name="user phone"
+              placeholder="+1234567890"
+              required
+            />
+          </div>
+          <div class="teachers-contact__gen">
+            <label class="teachers-contact__heading" for="autheadress"
+              >Address *</label
+            >
+            <textarea
+              class="teachers-contact__story teachers-contact__story--input"
+              id="story"
+              type="text"
+              name="add"
+              placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            ></textarea>
+            <span class="teachers-contact__quantity">0/2000</span>
+          </div>
+          <div class="teachers-contact__gen">
+            <label class="teachers-contact__heading" for="authphoto"
+              >Photo *</label
+            >
+            <input
+              class="teachers-contact__image teachers-contact__image--input"
+              id="image"
+              type="file"
+              placeholder="Drag and drop or click here to select file"
+            />
+          </div>
+          <div class="teachers-contact__gen">
+            <label class="teachers-contact__heading" for="authbirth"
+              >Date of Birth*</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authbirth"
+              name="user birth"
+              placeholder="24 Februari 1997"
+              required
+            />
+          </div>
+          <div class="teachers-contact__gen">
+            <label class="teachers-contact__heading" for="authaddress"
+              >Place of Birth *</label
+            >
+            <input
+              class="field"
+              type="text"
+              id="authaddress"
+              name="user address"
+              placeholder="Jakarta, Indonesia"
+              required
+            />
+          </div>
+        </div>
+      </form>
+    </fieldset>
+  </div>
+  <div class="teachers-contact__wrapper">
+    <h2 class="teachers-contact__title">Education</h2>
+    <fieldset class="teachers-contact__education">
+      <form
+        class="teachers-contact__info"
+        action="#"
+        method="post"
+        id="teachers-contact__info"
+      >
+        <div class="teachers-contact__gen">
+          <label class="teachers-contact__heading" for="authuniversity"
+            >University *</label
+          >
+          <input
+            class="field"
+            type="text"
+            id="authuniversity"
+            name="user university"
+            placeholder="University Akademi Historia"
+            required
+          />
+        </div>
+        <div class="teachers-contact__gen">
+          <label class="teachers-contact__heading" for="authdegree"
+            >Degree *</label
+          >
+          <input
+            class="field"
+            type="text"
+            id="authdegree"
+            name="user degree"
+            placeholder="History Major"
+            required
+          />
+        </div>
+        <div class="teachers-contact__gen">
+          <label class="teachers-contact__heading" for="authstart"
+            >Start & End Date *</label
+          >
+          <div class="teachers-contact__month">
+            <input
+              class="field"
+              type="text"
+              id="authstart"
+              name="user start"
+              placeholder="September 2013"
+              required
+            />
+            <input
+              class="field"
+              type="text"
+              id="authend"
+              name="user end"
+              placeholder="September 2017"
+              required
+            />
+          </div>
+        </div>
+        <div class="teachers-contact__gen">
+          <label class="teachers-contact__heading" for="authcity">City *</label>
+          <input
+            class="field"
+            type="text"
+            id="authcity"
+            name="user city"
+            placeholder="Yogyakarta, Indonesia"
+            required
+          />
+        </div>
+      </form>
+    </fieldset>
+  </div>
+  <div class="teachers-contact__action">
+    @@include('buttons/btn-draft.html') @@include('buttons/btn.html')
+  </div>
+</section>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { 'title': 'Главная' })
+  <body>
+    @@include('html/icons.html')
+    <main class="page">
+      @@include('html/side-bar.html') 
+    @@include('html/teachers-contacts.html')
+   
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js"></script>
+    
+    <script>
+      $('.side-menu__item--btn').on('click', function() {
+        $(this).find('.submenu').toggleClass('submenu--open');
+        $(this).toggleClass('side-menu__item--btn--open');
+      } );
+      $('.header-nav__btn').on('click', () => {$('.header-nav').toggleClass('header-nav--open'); $('.side-menu').toggleClass('side-menu--open');} );
+    </script>
+ 
+
+
+  </body>
+</html>

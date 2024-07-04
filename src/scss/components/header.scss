@@ -7,6 +7,12 @@
    align-items: center;
 }
 
+.header__navigation{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: rem(40);
+}
+
 .header__title {
   text-decoration: none;
   font: 700 rem(36) / 1.5 var(--main-font);
