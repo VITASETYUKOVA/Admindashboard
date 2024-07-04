@@ -1,0 +1,45 @@
+.food-description {
+  grid-area: food-description;
+  padding: rem(32) rem(32) rem(109) rem(32);
+  background-color: var(--color-white);
+  border-radius: rem(20);
+}
+
+.foods {
+  display: grid;
+  grid-template-columns: 1fr 49% 17%;
+  gap: rem(48);
+}
+
+.foods__dishes {
+  &.dishes {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.dishes__btn {
+  margin-left: auto;
+}
+
+.food-description__block {
+  display: flex;
+  gap: rem(40);
+}
+
+.food-description__list {
+  margin: rem(16) 0 0 0;
+  padding: 0 0 0 rem(32);
+  max-width: rem(508);
+}
+
+.food-description__item {
+  color: var(--color-grey-3);
+  font-size: rem(18);
+  line-height: 1.5;
+}
+
+.food-description__list h3 {
+  margin-left: -30px;
+}

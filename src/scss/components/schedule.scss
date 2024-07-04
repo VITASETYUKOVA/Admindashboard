@@ -133,3 +133,11 @@
     }
   }
   
+
+  .teacher{
+    &.schedule{
+      &.schedule{
+        grid-area: teacher-schedule;
+    }
+  } 
+} 

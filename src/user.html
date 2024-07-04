@@ -4,20 +4,17 @@
   <body>
     @@include('html/icons.html')
     <main class="page">
-      @@include('html/side-bar.html') 
-    @@include('html/students-menu.html')
+      @@include('html/side-bar.html') @@include('html/user-dashboard.html')
+      @@include('html/plan.html')
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.2/chart.min.js"></script>
-    
     <script>
-      $('.side-menu__item--btn').on('click', function() {
+      $('.side-menu__item--btn').on('click', function () {
         $(this).find('.submenu').toggleClass('submenu--open');
         $(this).toggleClass('side-menu__item--btn--open');
-      } );
-      $('.side-menu').toggleClass('side-menu--open'); 
+      });
+      $('.side-menu').toggleClass('side-menu--open');
     </script>
- 
-
   </body>
 </html>

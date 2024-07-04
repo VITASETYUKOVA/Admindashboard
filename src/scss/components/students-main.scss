@@ -1,0 +1,92 @@
+.students-main {
+  grid-area: students-main;
+  background-color: var(--site-background);
+}
+
+.students-data {
+  grid-area: students-data;
+  padding: rem(32) rem(42) rem(48) rem(32);
+  background-color: var(--color-white);
+  border-radius: rem(20);
+  border-top: solid rem(140) var(--color-purple);
+  margin-bottom: rem(45);
+}
+
+.students-data__cover {
+  position: absolute;
+  display: inline-flex;
+  top: rem(-140);
+  right: 0;
+}
+
+.students-data__icon {
+  &.icon-orange {
+    bottom: 0;
+    right: rem(140);
+    position: absolute;
+  }
+
+  &.icon-yellow {
+    z-index: 2;
+  }
+}
+
+.students-data__data-list {
+  &.data-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(24);
+    position: relative;
+  }
+}
+
+.students-data__profile {
+  display: flex;
+  margin-left: auto;
+}
+
+.students-data__education {
+  align-items: center;
+  margin: rem(16) 0 rem(31) 0;
+  padding: 0;
+}
+
+.students-data__institute {
+  margin-bottom: rem(9);
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-text);
+
+  &:not(:last-child) {
+    margin-top: rem(31);
+  }
+}
+.students-data__date {
+  color: var(--color-grey-3);
+  font-size: rem(18);
+  line-height: 1.5;
+}
+
+.students-data__paragraph,
+.students-data_text {
+  margin-top: rem(16);
+  font-weight: 400;
+  max-width: rem(616);
+  color: var(--color-text);
+}
+
+.data-list__heading {
+  text-decoration: none;
+  font: 700 rem(32) / 1.5 var(--main-font);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+.data-list__paragraph {
+  text-decoration: none;
+  font: 600 rem(18) / 1.5 var(--main-font);
+  color: var(--color-grey-3);
+  margin-bottom: rem(40);
+  padding: 0;
+}

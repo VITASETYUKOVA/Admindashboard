@@ -1,4 +1,4 @@
-.notes{
+.notes {
   margin-bottom: rem(64);
 }
 
@@ -22,6 +22,19 @@
   display: flex;
   padding: rem(16) 0 rem(23) 0;
   border-bottom: solid 1px var(--color-grey-3);
+
+  &:last-child {
+    padding-bottom: 0;
+    border: none;
+  }
+
+  &:first-child {
+    padding-top: 0;
+  }
+
+  &--additionally {
+    padding: rem(12) 0 rem(20) 0;
+  }
 }
 .notes__main {
   &.data-list {
@@ -29,5 +42,49 @@
     gap: rem(16);
     margin: rem(5) auto 0 0;
     min-width: 0;
+  }
+}
+
+.student-communication {
+  grid-area: student-communication;
+  padding: rem(32);
+  background-color: var(--color-white);
+  border-radius: rem(20);
+}
+
+.user {
+  grid-area: notes;
+  padding: rem(32);
+  background-color: var(--color-white);
+  border-radius: rem(20);
+}
+
+.user__notes {
+  &.notes {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+    margin-top: rem(32);
+  }
+}
+
+.notes__visits {
+  display: inline-flex;
+  text-decoration: none;
+  text-align: center;
+  color: var(--color-white);
+  border: 0;
+  justify-content: center;
+  align-items: center;
+
+  &--background-orange {
+    width: rem(24);
+    height: rem(24);
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 8px;
   }
 }

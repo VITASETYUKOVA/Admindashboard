@@ -1,0 +1,63 @@
+.coordinates {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  margin: rem(36) 0 0 0;
+  padding: 0;
+  list-style: none;
+  column-gap: rem(35);
+}
+
+.coordinates__item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.coordinates__inner {
+  text-decoration: none;
+}
+
+.coordinates__link {
+  text-decoration: none;
+  flex-shrink: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(16);
+
+  &:hover {
+    svg {
+      color: var(--color-red);
+    }
+  }
+
+  &:active {
+    svg {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.coordinates__img {
+  justify-content: center;
+  display: inline-flex;
+  color: var(--color-white);
+  align-items: center;
+  width: rem(40);
+  height: rem(40);
+  border-radius: 50%;
+  background-color: var(--color-orange);
+}
+
+.coordinates__text {
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+.coordinates__info {
+  color: var(--color-grey-3);
+  margin: 0 0 rem(8) 0;
+  padding: 0;
+}
